@@ -1,74 +1,113 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spin-Zone News</title>
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spin-Zone News</title>
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body ng-app="routerApp">
-    <!--[if lt IE 10]>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body ng-app="routerApp">
+  <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" ui-sref="home">Spin-Zone—News</a>
-        </div>
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="brand" ui-sref="home">Spin-Zone—News</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a ui-sref="home">Home</a></li>
-            <li><a ui-sref="about">About</a></li>
+          <li class="active"><a ui-sref="home">Home</a></li>
+          <li><a ui-sref="about">About</a></li>
         </ul>
-    </nav>
+        </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button>
+            <a class="btn" type="submit" id="search" ui-sref="results">
+              <img src="/images/donkey-vs-elephant_head-to-head.png" width="30px" height="90%" alt="search" /></a>
+          </button>
+          <!--<button type="submit" class="btn btn-default">Submit</button>-->
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link?</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MENU<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a ui-sref="home">Home</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a ui-sref="about">About</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
-    <!-- MAIN CONTENT -->
-    <main class="container">
+  <!-- MAIN CONTENT -->
+  <main class="container">
 
-        <div ui-view></div><!-- INJECT CONTENT into HERE -->
+    <div ui-view></div>
+    <!-- INJECT CONTENT into HERE -->
 
-    </main>
+  </main>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/lodash/lodash.js"></script>
-    <script src="/bower_components/angular/angular.js"></script>
-    <script src="/bower_components/ui-router/release/angular-ui-router.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/lodash/lodash.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/ui-router/release/angular-ui-router.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <!-- endbuild -->
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+  <!-- endbuild -->
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/MainController.js"></script>
-    <!-- endbuild -->
-  </body>
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/MainController.js"></script>
+  <!-- endbuild -->
+</body>
+
 </html>
