@@ -1,11 +1,12 @@
 /* global angular Firebase */
+
 (function(){
     'use strict';
 
-angular.module('tiy-upvote')
+  var myApp = angular.module('myApp', ['ui.router']);
 
 .controller('MainController', function($scope){
-  var firebase = new Firebase('https://amber-torch-2854.firebaseapp.com');
+  var firebase = new Firebase('https://spin-zone.firebaseio.com/');
 
   var self = this;
 
