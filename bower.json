@@ -1,6 +1,5 @@
 {
   "name": "spin-zonenews",
-  "private": true,
   "dependencies": {
     "bootstrap-sass": "3.3.4",
     "modernizr": "~2.8.1",
@@ -11,5 +10,19 @@
   "devDependencies": {
     "chai": "~3.0.0",
     "mocha": "~2.2.5"
-  }
+  },
+  "version": "0.0.0",
+  "homepage": "https://github.com/Epicurean306/Spin-ZoneNews",
+  "authors": [
+    "Epicurean306 <benjaminforbesgriffith@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "CC0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
