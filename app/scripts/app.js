@@ -17,6 +17,10 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         .state('about', {
           url: '/about',
           templateUrl: '/views/about.html'
+        })
+        .state('404', {
+          url: '/404',
+          templateUrl: '/views/404.html'
         });
 });
 
