@@ -1,9 +1,9 @@
 /* global angular Firebase */
-
+/*
 (function(){
     'use strict';
 
-  var myApp = angular.module('myApp', ['ui.router']);
+  var spin-zone = angular.module('spin-zone', ['ui.router']);
 
 .controller('MainController', function($scope){
   var firebase = new Firebase('https://spin-zone.firebaseio.com/');
@@ -15,10 +15,10 @@
       $scope.$apply(function(){
       self.username = auth.github.username;
         console.log('Ghost in the Machine?');
-
       });
     });
   };
 
 });
 })();
+*/

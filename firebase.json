@@ -1,6 +1,6 @@
 {
-  "firebase": "amber-torch-2854",
-  "public": "app",
+  "firebase": "spin-zone",
+  "public": "dist",
   "ignore": [
     "firebase.json",
     "**/.*",

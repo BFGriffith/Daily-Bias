@@ -7,18 +7,24 @@ var routerApp = angular.module('routerApp', ['ui.router']);
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/404');
 
     $stateProvider
 
         .state('home', {
             url: '/home',
-            templateUrl: 'home.html'
+            templateUrl: '/views/home.html'
         })
 
         .state('about', {
-
+          url: '/about',
+          templateUrl: '/views/about.html'
+        })
+        /*
+        .otherwise({
+          redirectTo: '/home'
         });
+        */
 
 });
 
