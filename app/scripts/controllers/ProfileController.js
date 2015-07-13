@@ -11,7 +11,7 @@
        */
       this.saveSubmission = function($form) {
         if (!$form.$dirty || !$form.$valid) return;
-        // Do nothing is nothing is submitted or if invalid
+        // Do nothing if nothing is submitted or if invalid
 
         this.submission.created_on = new Date;
 
