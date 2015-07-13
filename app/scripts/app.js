@@ -18,6 +18,10 @@
         url: '/results',
         templateUrl: '/views/searchResults.html'
       })
+      .state('login', {
+        url: '/login',
+        templateUrl: '/views/login.html'
+      })
       .state('about', {
         url: '/about',
         templateUrl: '/views/about.html'
