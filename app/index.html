@@ -1,74 +1,81 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spin-Zone News</title>
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Critically expose, juxtapose, and rate political bias by topic — contrasting the coverage of various journalistic sources across the political spectrum!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spin-Zone News</title>
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body ng-app="routerApp">
-    <!--[if lt IE 10]>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body ng-app="routerApp">
+  <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" ui-sref="home">Spin-Zone—News</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li><a ui-sref="home">Home</a></li>
-            <li><a ui-sref="about">About</a></li>
-        </ul>
-    </nav>
+  <!-- NAVIGATION -->
+  <ul class="nav nav-tabs nav-justified">
+    <li role="presentation" class="active"><a ui-sref="home">Home</a></li>
+    <li role="presentation"><a ui-sref="about">About</a></li>
+  </ul>
 
-    <!-- MAIN CONTENT -->
-    <main class="container">
+  <!-- MAIN CONTENT -->
+  <main ui-view class="container"></main>
+  <!-- FOOTER -->
+  <footer class="container-fluid">
+    <p>©2015 — Ben Griffith.</p>
+    <p>
+      <small>All Rights Reserved.</small>
+    </p>
+    <ul class="nav nav-pills" role="tablist">
+      <li role="navigation"><a href="https://github.com/Epicurean306/Spin-ZoneNews" target="_blank">GitHub</a></li>
+      <li role="navigation"><a href="mailto:benjaminforbesgriffith@gmail.com">Contact by eMail</a></li>
+    </ul>
+  </footer>
 
-        <div ui-view></div><!-- INJECT CONTENT into HERE -->
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/lodash/lodash.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/ui-router/release/angular-ui-router.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    </main>
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+  <!-- endbuild -->
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/lodash/lodash.js"></script>
-    <script src="/bower_components/angular/angular.js"></script>
-    <script src="/bower_components/ui-router/release/angular-ui-router.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/MainController.js"></script>
+  <script src="scripts/controllers/SearchController.js"></script>
 
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <!-- endbuild -->
+  <!-- endbuild -->
+</body>
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/MainController.js"></script>
-    <!-- endbuild -->
-  </body>
 </html>
