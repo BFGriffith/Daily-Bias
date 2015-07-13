@@ -10,16 +10,24 @@
     angular.module('app')
 
     .controller('SearchController', function($http) {
-        $http.get('https://ajax.googleapis.com/ajax/services/search/news' + '?v=1.0&' + 'q=obama')
+        $http.get('https://ajax.googleapis.com/ajax/services/search/news' + '?v=1.0&' + 'q=obama' + '&callback=processResults')
+          processResults({"responseData": {
+            "results": []
+          }});
+          /*
           .then(function(response) {
-              "responseData": {
+                "responseData": {
                 "results": [],
                 "cursor": {}
               },
               "responseDetails": null | string - on - error,
               "responseStatus": 200 | error - code
             });
+          */
+
           });
+
+
 
     })();
 
