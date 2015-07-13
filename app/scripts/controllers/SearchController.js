@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    /**TODO: single search function, then both in parallel
+    /**TODO: single search function with dummy data first, then both in parallel
         * @param $http.get(... + 'Fox' + 'q=?')
         * @param $http.get(... + 'MSNBC' + 'q=?')
         * @return {?}
