@@ -1,1 +1,11 @@
-$icon-font-path: '../fonts/';
+#footerContainer {
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    #footerContent {
+      height: 100px;
+      margin: auto;
+      width: 400px;
+    }
+}
