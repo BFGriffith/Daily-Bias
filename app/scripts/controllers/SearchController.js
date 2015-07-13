@@ -1,5 +1,12 @@
 (function() {
     'use strict';
+
+    /**TODO: single search function, then both in parallel
+        * @param $http.get(... + 'Fox' + 'q=?')
+        * @param $http.get(... + 'MSNBC' + 'q=?')
+        * @return {?}
+        */
+
     angular.module('app')
 
     .controller('SearchController', function($http) {
