@@ -2,6 +2,14 @@
     'use strict';
     angular.module('app')
 
+$( "#search" ).click(function() {
+$.getJSON('https://ajax.googleapis.com/ajax/services/search/news' + '?obama')
+.then(function(){
+      console.log(results);
+    })
+});
+
+/*
     .controller('SearchController', function($http) {
         $http.get('https://ajax.googleapis.com/ajax/services/search/news' + '?v=1.0&' + 'q=obama')
           .then(function(response) {
@@ -13,6 +21,8 @@
               "responseStatus": 200 | error - code
             });
           });
+*/
+
 
     })();
 

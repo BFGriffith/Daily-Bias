@@ -32,7 +32,7 @@
       if (error) {
         console.log("Login Failed!", error);
       } else {
-        // We'll never get here, as the page will redirect on success.
+        // Don't want an else, as the page should redirect on success.
       }
     });
   */

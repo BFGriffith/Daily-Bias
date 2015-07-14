@@ -3,7 +3,7 @@
 (function() {
   'use strict';
 
-  var routerApp = angular.module('routerApp', ['ui.router']);
+  var routerApp = angular.module('routerApp', ['ui.router', 'firebase']);
 
   routerApp.config(function($stateProvider, $urlRouterProvider) {
 
