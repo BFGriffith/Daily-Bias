@@ -5,6 +5,13 @@
   <div id="branding"></div><br />
   <div id="content">Loading...</div>
 
+  <!-- searchResultsTEMPLATE -->
+  <div ng-model="results">
+    <h3><strong>{{responseData.results.title}}</strong></h3>
+    <p>{{responseData.results.content}}</p>
+    <p>{{responseData.results.publishedDate}}</p>
+  </div><!-- END template -->
+
 <div>
   <h3>MSNBC</h3>
   <p>Obama ispsum</p>
