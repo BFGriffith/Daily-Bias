@@ -15,7 +15,7 @@
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
-
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
@@ -26,6 +26,8 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+  <script type="text/javascript">google.load("search", "1");</script>
+
   <!-- NAVIGATION -->
   <ul class="nav nav-tabs nav-justified">
     <li role="presentation" class="active"><a ui-sref="home">Home</a></li>
@@ -34,6 +36,10 @@
 
   <!-- MAIN CONTENT -->
   <main ui-view class="container"></main>
+
+  <div id="branding"></div><br />
+  <div id="content">Loading...</div>
+
   <!-- FOOTER -->
   <footer class="container-fluid" id="footerContainer">
     <div id="footerContent">
