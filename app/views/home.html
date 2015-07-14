@@ -5,10 +5,10 @@
   <form class="navbar-form navbar-left" role="search" ng-submit="submitSearch()" ng-controller="SearchController">
     <div class="form-group">
       <input type="text" ng-model="text" class="form-control" placeholder="SEARCH">
-      <input type="submit" id="submit" value="Submit" />
+      <input type="submit" id="submit" ng-submit="SearchController()" value="Submit" />
       <!--<pre>search={{search}}</pre>-->
     </div>
-    <button ng-click="SearchController">
+    <button ng-click="SearchController()">
 
       <a class="btn" type="submit" id="search" ui-sref="searchResults">
         <img src="/images/noun_150137_cc.png" width="30px" height="90%" alt="search" /></a>
