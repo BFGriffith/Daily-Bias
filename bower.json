@@ -5,7 +5,9 @@
     "modernizr": "~2.8.1",
     "lodash": "~3.10.0",
     "angular": "~1.4.2",
-    "ui-router": "~0.2.15"
+    "ui-router": "~0.2.15",
+    "firebase": "~2.2.7",
+    "angularfire": "~1.1.2"
   },
   "devDependencies": {
     "chai": "~3.0.0",
