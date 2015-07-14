@@ -1,5 +1,17 @@
 (function() {
     'use strict';
+
+
+    $(document).ready(function(){
+        $.getJSON("http://www.faroo.com/api?q=google&start=1&l=en&src=web&f=json",
+            function(data){
+              $.each(data.results, function(i,item){
+    			jQuery('<div/>', {  text: item.title }).appendTo('#results');
+              });
+            });
+      });
+
+/*
 //http://stackoverflow.com/questions/4478992/
     google.load('search', '1');
 
@@ -30,7 +42,7 @@
       window.onload = function() {
         newsSearch.setSearchCompleteCallback(newsSearch, searchcomplete, null);
       }
-
+      */
 
       /**TODO: single search function with dummy data first, then both in parallel
        * @param $http.get(... + 'Fox' + 'q=?')
@@ -72,6 +84,16 @@
     "currentPageIndex": 0,
     "moreResultsUrl": "http://www.google.com/search..."
   }
+  */
+
+  /*
+  var newSearch = document.querySelectorAll('input.new-search');
+    addEventListener('keyup', function EnterKey(event){
+  		//given an HTML element <input class="new-search">
+  		if ( event.keyCode === 13 ){
+        ?
+  		}
+  });
   */
 
 /**TODO: research if these would work better:
