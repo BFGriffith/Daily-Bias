@@ -13,7 +13,7 @@
     "chai": "~3.0.0",
     "mocha": "~2.2.5"
   },
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/Epicurean306/Daily-Bias",
   "authors": [
     "Epicurean306 <benjaminforbesgriffith@gmail.com>"
@@ -26,5 +26,12 @@
     "bower_components",
     "test",
     "tests"
+  ],
+  "description": "Critically expose, juxtapose, and rate political bias by topic — contrasting the coverage of various journalistic sources across the political spectrum based on simultaneous parallel news-searches!",
+  "keywords": [
+    "news",
+    "politics",
+    "bias",
+    "angular"
   ]
 }

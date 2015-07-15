@@ -32,5 +32,5 @@
         templateUrl: '/views/404.html'
       });
   });
-  angular.module('daily-bias').constant('FIREBASE_URL', 'https://spin-zone.firebaseio.com/');
+  angular.module('daily-bias').constant('FIREBASE_URL', 'https://daily-bias.firebaseio.com/');
 })();
