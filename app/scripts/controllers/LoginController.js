@@ -1,7 +1,8 @@
+/*global angular firebase*/
 (function() {
     'use strict';
     angular.module('daily-bias')
-    .controller('LoginController', function($firebase) {
+    .controller('LoginController', function() {
           var newUser = true;
           var ref = new Firebase('https://daily-bias.firebaseio.com/');
           ref.authWithOAuthPopup('facebook', function(error, authData) {
@@ -55,35 +56,35 @@
     }) //END LoginController
 */
 
-  /*
-    var ref = new Firebase("https://spin-zone.firebaseio.com");
-    ref.authWithOAuthRedirect("google", function(error) {
-      if (error) {
-        console.log("Login Failed!", error);
-      } else {
-        // Don't want an else, as the page should redirect on success.
-      }
-    });
-  */
-
-  /**TODO: create a callback which logs the current auth state
-   * @param ?
-   * @return ?
-   */
-
-  /*
-    function OAuthDataCallback(OAuthData) {
-      if (OAuthData) {
-        console.log("User " + OAuthData.uid + " is logged in with " + OAuthData.provider);
-      } else {
-        console.log("User is logged out");
-      }
+/*
+  var ref = new Firebase("https://spin-zone.firebaseio.com");
+  ref.authWithOAuthRedirect("google", function(error) {
+    if (error) {
+      console.log("Login Failed!", error);
+    } else {
+      // Don't want an else, as the page should redirect on success.
     }
-  */
+  });
+*/
 
-  /**TODO: register the callback to be fired every time auth state changes
-   * @param ?
-   * @return ?
-   */
-  // var ref = new Firebase("https://spin-zone.firebaseio.com");
-  // ref.onAuth(OAuthDataCallback);
+/**TODO: create a callback which logs the current auth state
+ * @param ?
+ * @return ?
+ */
+
+/*
+  function OAuthDataCallback(OAuthData) {
+    if (OAuthData) {
+      console.log("User " + OAuthData.uid + " is logged in with " + OAuthData.provider);
+    } else {
+      console.log("User is logged out");
+    }
+  }
+*/
+
+/**TODO: register the callback to be fired every time auth state changes
+ * @param ?
+ * @return ?
+ */
+// var ref = new Firebase("https://spin-zone.firebaseio.com");
+// ref.onAuth(OAuthDataCallback);

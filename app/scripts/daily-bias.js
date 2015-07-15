@@ -1,9 +1,9 @@
-/*global angular Firebase*/
+/*global angular firebase*/
 /*TODO: remind eslint about angular http://eslint.org/docs/rules/no-undef.html*/
 (function() {
   'use strict';
 
-  angular.module('daily-bias', ['ui.router', 'firebase'])
+  angular.module('daily-bias', ['ui.router'])
   .config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/404');
