@@ -1,4 +1,4 @@
-/*global angular firebase*/
+/*global angular Firebase*/
 (function() {
     'use strict';
     angular.module('daily-bias')
@@ -30,7 +30,7 @@
 
 
 /*
-  angular.module('spin-zone')
+  angular.module('daily-bias')
     .controller('LoginController', function($scope, OAuth, $firebase) {
       var ref = new Firebase('https://spin-zone.firebaseio.com/');
 

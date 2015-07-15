@@ -1,4 +1,4 @@
-/*global angular firebase*/
+/*global angular*/
 /*TODO: remind eslint about angular http://eslint.org/docs/rules/no-undef.html*/
 (function() {
   'use strict';
