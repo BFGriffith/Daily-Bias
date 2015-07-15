@@ -1,5 +1,5 @@
 {
-  "firebase": "spin-zone",
+  "firebase": "daily-bias",
   "public": "dist",
   "ignore": [
     "firebase.json",

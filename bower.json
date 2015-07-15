@@ -1,18 +1,20 @@
 {
-  "name": "spin-zonenews",
+  "name": "daily-bias",
   "dependencies": {
     "bootstrap-sass": "3.3.4",
     "modernizr": "~2.8.1",
     "lodash": "~3.10.0",
     "angular": "~1.4.2",
-    "ui-router": "~0.2.15"
+    "ui-router": "~0.2.15",
+    "firebase": "~2.2.7",
+    "angularfire": "~1.1.2"
   },
   "devDependencies": {
     "chai": "~3.0.0",
     "mocha": "~2.2.5"
   },
-  "version": "0.0.0",
-  "homepage": "https://github.com/Epicurean306/Spin-ZoneNews",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Epicurean306/Daily-Bias",
   "authors": [
     "Epicurean306 <benjaminforbesgriffith@gmail.com>"
   ],
@@ -24,5 +26,12 @@
     "bower_components",
     "test",
     "tests"
+  ],
+  "description": "Critically expose, juxtapose, and rate political bias by topic — contrasting the coverage of various journalistic sources across the political spectrum based on simultaneous parallel news-searches!",
+  "keywords": [
+    "news",
+    "politics",
+    "bias",
+    "angular"
   ]
 }
