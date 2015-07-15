@@ -1,0 +1,42 @@
+<!-- login.html -->
+<div class="container-fluid" ng-app="profileForm" ng-controller="MainController as app">
+  <form name="loginForm" ng-submit="app.save(profileForm)">
+    <div class="col-sm-4">
+      <fieldset class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" id="username" name="username" ng-model="app.submission.username" placeholder="(username)">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="username">Password:</label>
+        <input type="text" class="form-control" id="password" name="password" ng-model="app.submission.password" placeholder="(password)">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="first_name">First Name:</label>
+        <input type="text" class="form-control" id="first_name" name="first_name" ng-model="app.submission.first_name" placeholder="Jane">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="last_name">Last Name:</label>
+        <input type="text" class="form-control" id="last_name" name="last_name" ng-model="app.submission.last_name" placeholder="Doe">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="text" class="form-control" id="email" name="email" ng-model="app.submission.email" placeholder="jane@doe.com">
+      </fieldset>
+    </div>
+    <div class="col-sm-4">
+      <fieldset class="form-group">
+        <label for="affiliations">Political Affiliations:</label>
+        <textarea class="form-control" id="affiliations" name="affiliations" ng-model="app.submission.affiliations" placeholder="List any political party affiliations here..."></textarea>
+      </fieldset>
+    </div>
+    <div class="col-sm-4">
+      <fieldset class="form-group">
+        <label for="platform">Summarize your political platform:</label>
+        <textarea class="form-control" id="platform" name="platform" ng-model="app.submission.platform" placeholder="Describe your political ideology here..."></textarea>
+      </fieldset>
+    </div>
+    <div class="col-sm-12 text-center">
+      <input class="btn btn-primary btn-lg" type="submit" value="Submit your information." />
+    </div>
+  </form>
+</div><!-- ENDcontainer -->

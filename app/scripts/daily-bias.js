@@ -3,9 +3,8 @@
 (function() {
   'use strict';
 
-  var routerApp = angular.module('routerApp', ['ui.router']);
-
-  routerApp.config(function($stateProvider, $urlRouterProvider) {
+  angular.module('daily-bias', ['ui.router'])
+  .config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/404');
 
@@ -18,6 +17,12 @@
         url: '/results',
         templateUrl: '/views/searchResults.html'
       })
+      .state('login', {
+        url: '/login',
+        templateUrl: '/views/login.html'
+        // controller: 'LoginController',
+        // controllerAs: 'login'
+      })
       .state('about', {
         url: '/about',
         templateUrl: '/views/about.html'
@@ -27,5 +32,5 @@
         templateUrl: '/views/404.html'
       });
   });
-
+  angular.module('daily-bias').constant('FIREBASE_URL', 'https://spin-zone.firebaseio.com/');
 })();
