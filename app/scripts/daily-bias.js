@@ -1,11 +1,10 @@
-/*global angular*/
+/*global angular Firebase*/
 /*TODO: remind eslint about angular http://eslint.org/docs/rules/no-undef.html*/
 (function() {
   'use strict';
 
-  var routerApp = angular.module('routerApp', ['ui.router', 'firebase']);
-
-  routerApp.config(function($stateProvider, $urlRouterProvider) {
+  angular.module('daily-bias', ['ui.router', 'firebase'])
+  .config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/404');
 
@@ -18,9 +17,11 @@
         url: '/results',
         templateUrl: '/views/searchResults.html'
       })
-      .state('login', {
+      $stateProvider.when('login', {
         url: '/login',
         templateUrl: '/views/login.html'
+        controller: 'LoginController',
+        controllerAs: 'login'
       })
       .state('about', {
         url: '/about',
@@ -31,5 +32,5 @@
         templateUrl: '/views/404.html'
       });
   });
-  angular.module('spin-zone').constant('FIREBASE_URL', 'https://spin-zone.firebaseio.com/');
+  angular.module('daily-bias').constant('FIREBASE_URL', 'https://spin-zone.firebaseio.com/');
 })();

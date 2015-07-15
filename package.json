@@ -39,7 +39,7 @@
       ]
     }
   },
-  "name": "spin-zonenews",
+  "name": "daily-bias",
   "description": "Critically expose, juxtapose, and rate political bias by topic — contrasting the coverage of various journalistic sources across the political spectrum!",
   "version": "0.0.0",
   "main": "gulpfile.babel.js",
@@ -51,12 +51,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Epicurean306/Spin-ZoneNews.git"
+    "url": "git+https://github.com/Epicurean306/Daily-Bias.git"
   },
   "author": "Ben Forbes Griffith",
   "license": "CC0",
   "bugs": {
-    "url": "https://github.com/Epicurean306/Spin-ZoneNews/issues"
+    "url": "https://github.com/Epicurean306/Daily-Bias/issues"
   },
-  "homepage": "https://github.com/Epicurean306/Spin-ZoneNews#readme"
+  "homepage": "https://github.com/Epicurean306/Daily-Bias#readme"
 }

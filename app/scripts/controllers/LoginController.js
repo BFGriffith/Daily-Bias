@@ -1,6 +1,34 @@
 (function() {
-  'use strict';
+    'use strict';
+    angular.module('daily-bias')
+    .controller('LoginController', function($firebase) {
+          var newUser = true;
+          var ref = new Firebase('https://daily-bias.firebaseio.com/');
+          ref.authWithOAuthPopup('facebook', function(error, authData) {
+            if (error) {
+              console.log('Login Failed!', error);
+            } else {
+              console.log('Authenticated successfully with payload:', authData);
+            }
+          }, {
+            remember: 'sessionOnly'
+          });
+          function getName(authData) {
+              return authData.facebook.displayName;
+          }
+          ref.onAuth(function(authData) {
+            if (authData && newUser) {
+              ref.child('users').child(authData.uid).set({
+                provider: authData.provider,
+                name: getName(authData)
+              });
+            }
+          });
+      });
+})();
 
+
+/*
   angular.module('spin-zone')
     .controller('LoginController', function($scope, OAuth, $firebase) {
       var ref = new Firebase('https://spin-zone.firebaseio.com/');
@@ -25,6 +53,7 @@
         OAuth.googleLogout();
       };
     }) //END LoginController
+*/
 
   /*
     var ref = new Firebase("https://spin-zone.firebaseio.com");
@@ -58,6 +87,3 @@
    */
   // var ref = new Firebase("https://spin-zone.firebaseio.com");
   // ref.onAuth(OAuthDataCallback);
-
-
-})();

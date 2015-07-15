@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    angular.module('app')
+    angular.module('daily-bias');
 
 $( "#search" ).click(function() {
 $.getJSON('https://ajax.googleapis.com/ajax/services/search/news' + '?obama')

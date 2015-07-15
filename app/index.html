@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app="daily-bias">
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Critically expose, juxtapose, and rate political bias by topic — contrasting the coverage of various journalistic sources across the political spectrum!">
+  <meta name="description" content="Critically expose, juxtapose, and rate political bias by topic — contrasting the coverage of various journalistic sources across the political spectrum based on simultaneous parallel news-searches!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Spin-Zone News</title>
+  <title>Daily-Bias News</title>
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
@@ -15,13 +15,12 @@
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
-
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
 
-<body ng-app="routerApp">
+<body>
   <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -29,22 +28,25 @@
   <!-- NAVIGATION -->
   <ul class="nav nav-tabs nav-justified">
     <li role="presentation" class="active"><a ui-sref="home">Home</a></li>
-    <li role="presentation"><a ui-sref="login" ng-click="LoginController()"><strong>Login</strong></a></li>
-    <li role="presentation"><a ui-sref="about">About</a></li>
+    <li role="presentation"><a ui-sref="login" ng-click="login.login()">Login</a></li>
+    <li role="presentation"><a ui-sref="about">About this APP</a></li>
   </ul>
 
   <!-- MAIN CONTENT -->
   <main ui-view class="container"></main>
+
   <!-- FOOTER -->
-  <footer class="container-fluid">
-    <p>©2015 — Ben Griffith.</p>
+  <footer class="container-fluid" id="footerContainer">
+    <div id="footerContent">
+    <p>©2015 — Ben Griffith: front-end developer for hire</p>
     <p>
       <small>All Rights Reserved.</small>
     </p>
-    <ul class="nav nav-pills" role="tablist">
-      <li role="navigation"><a href="https://github.com/Epicurean306/Spin-ZoneNews" target="_blank">GitHub</a></li>
-      <li role="navigation"><a href="mailto:benjaminforbesgriffith@gmail.com">Contact by eMail</a></li>
+    <ul class="nav nav-pills nav-justified" role="tablist">
+      <li role="navigation"><a href="https://github.com/Epicurean306/Daily-Bias" target="_blank">GitHub</a></li>
+      <li role="navigation"><a href="mailto:benjaminforbesgriffith@gmail.com">Contact Ben by eMail</a></li>
     </ul>
+  </div>
   </footer>
 
   <!-- build:js scripts/vendor.js -->
@@ -74,10 +76,10 @@
   <!-- endbuild -->
 
   <!-- build:js scripts/main.js -->
-  <script src="scripts/app.js"></script>
+  <script src="scripts/daily-bias.js"></script>
   <script src="scripts/controllers/MainController.js"></script>
+  <script src="scripts/controllers/LoginController.js"></script>
   <script src="scripts/controllers/SearchController.js"></script>
-
   <!-- endbuild -->
 </body>
 
