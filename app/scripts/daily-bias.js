@@ -33,4 +33,10 @@
       });
   });
   angular.module('daily-bias').constant('FIREBASE_URL', 'https://daily-bias.firebaseio.com/');
+  /*
+  .config(function(RestangularProvider) {
+    //set base url for api calls on restful services
+    RestangularProvider.setBaseUrl('https://ajax.googleapis.com/ajax/services/search/news');
+  });
+  */
 })();

@@ -12,11 +12,11 @@
         if (error) {
           console.log("Login Failed!", error);
         } else {
-          // the access token will allow us to make Open Graph API calls
+          //access token will allow us to make Open Graph API calls
           console.log(authData.facebook.accessToken);
         }
-      }, {
-        scope: "public_profile", // the permissions requested
+      }, {// the permissions requested...
+        scope: "public_profile",
         remember: 'sessionOnly'
       })
     };
@@ -59,7 +59,7 @@
 
 
 
-})();
+})();//END IIFE
 
 
 /*

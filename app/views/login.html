@@ -1,7 +1,8 @@
 <!-- login.html -->
-<div class="container-fluid" ng-app="profileForm" ng-controller="LoginController as app">
+<div class="container-fluid" ng-app="profileForm">
   <form name="loginForm" ng-submit="app.save(profileForm)">
     <div class="col-sm-4">
+      <input class="btn btn-primary btn-lg" ng-controller="LoginController as login" ng-click="login.login()" placeholder="Register with Facebook" />
       <fieldset class="form-group">
         <label for="username">Username:</label>
         <input type="text" class="form-control" id="username" name="username" ng-model="app.submission.username" placeholder="(username)">
