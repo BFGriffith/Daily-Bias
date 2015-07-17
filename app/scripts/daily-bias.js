@@ -3,16 +3,17 @@
 (function() {
   'use strict';
 
-  var routerApp = angular.module('routerApp', ['ui.router']);
-
-  routerApp.config(function($stateProvider, $urlRouterProvider) {
+  angular.module('daily-bias', ['ui.router'])
+  .config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/404');
 
     $stateProvider
       .state('home', {
         url: '/home',
-        templateUrl: '/views/home.html'
+        templateUrl: '/views/home.html',
+        controller: 'SearchController',
+        controllerAs: 'submitSearch'
       })
       .state('searchResults', {
         url: '/results',
@@ -27,5 +28,5 @@
         templateUrl: '/views/404.html'
       });
   });
-
+  angular.module('daily-bias').constant('FIREBASE_URL', 'https://daily-bias.firebaseio.com/');
 })();

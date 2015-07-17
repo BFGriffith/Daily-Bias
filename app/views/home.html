@@ -1,13 +1,13 @@
 <!-- home.html -->
-<div class="jumbotron">
-  <h1>Spin-Zone News</h1>
+<section class="jumbotron">
+  <h1>Daily-Bias News</h1>
   <p>Critically expose, juxtapose, and rate political bias by topic — contrasting the coverage of various journalistic sources across the political spectrum!</p>
-  <form class="navbar-form navbar-left" role="search" ng-submit="submitSearch()" ng-controller="SearchController">
+  <form class="navbar-form navbar-left" role="search" ng-controller="SearchController as submitSearch">
     <div class="form-group">
-      <a ui-sref="searchResults"><input type="text" ng-model="text" class="form-control" placeholder="SEARCH"></a>
+      <a ui-sref="searchResults"><input type="text" id="searchbox" ng-model="searchText" ng-trim="true" ng-required="true" class="form-control input-large search-query" ng-submit="SearchController()" placeholder="input news-SEARCH keyword(s) here!"></a>
       <a ui-sref="searchResults"><input type="submit" id="submit" ng-submit="SearchController()" value="Submit" /></a>
       <!--<pre>search={{search}}</pre>-->
     </div>
     <!--<button type="submit" class="btn btn-default">Submit</button>-->
   </form>
-</div>
+</section>
