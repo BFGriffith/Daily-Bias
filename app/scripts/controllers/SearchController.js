@@ -10,12 +10,13 @@
       self.search = [];
 
 
-
-      $http.jsonp('https://ajax.googleapis.com/ajax/services/search/news?v=1.0&q=barack%20obama&callback=JSON_CALLBACK')
+this.submitSearch = function(){
+      $http.get('https://ajax.googleapis.com/ajax/services/search/news?v=1.0&q=barack%20obama&callback=callback=processResults' + '.json')
         .then(function(response) {
           console.log(response);
           self.search = response.data;
         });
+      };
     });
 
 
