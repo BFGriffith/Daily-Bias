@@ -5,9 +5,7 @@
   <form class="navbar-form navbar-left" role="search" ng-controller="SearchController as submitSearch">
     <div class="form-group">
       <a ui-sref="searchResults"><input type="text" id="searchbox" ng-model="searchText" ng-trim="true" ng-required="true" class="form-control input-large search-query" ng-submit="SearchController()" placeholder="input news-SEARCH keyword(s) here!"></a>
-      <a ui-sref="searchResults"><input type="submit" id="submit" ng-submit="SearchController()" value="Submit" /></a>
-      <!--<pre>search={{search}}</pre>-->
+      <a ui-sref="searchResults"><input type="submit" id="submit" ng-submit="SearchController.submitSearch()" value="Submit" /></a>
     </div>
-    <!--<button type="submit" class="btn btn-default">Submit</button>-->
   </form>
 </section>
