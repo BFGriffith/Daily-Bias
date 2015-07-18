@@ -1,12 +1,9 @@
 <!-- searchResults.html -->
-<!-- ng-repeat="? in ?" -->
 <section>
-<div>
-  <h3>MSNBC</h3>
-  <p>Obama ispsum</p>
-</div>
-<div>
-  <h3>Fox</h3>
-  <p>Romney ispsum</p>
-</div>
+  <div class="list-group" id="article" ng-repeat="article in articles">
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading">List group item heading</h4>
+      <p class="list-group-item-text">{{.}}</p>
+    </a>
+  </div>
 </section>
