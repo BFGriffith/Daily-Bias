@@ -1,8 +1,7 @@
 (function() {
   'use strict';
 
-
-
+  
 
   angular.module('daily-bias')
   .controller('SearchController', function($http) {

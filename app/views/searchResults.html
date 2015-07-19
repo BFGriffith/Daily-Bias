@@ -1,9 +1,34 @@
 <!-- searchResults.html -->
-<section>
-  <div class="list-group" id="article" ng-repeat="article in articles">
+<section class="container-fluid results-Left" id="left">
+  <div class="list-group" id="article" ng-repeat="article in search.articles">
     <a href="#" class="list-group-item">
-      <h4 class="list-group-item-heading">List group item heading</h4>
+      <h4 class="list-group-item-heading">{{.title}}</h4>
       <p class="list-group-item-text">{{.}}</p>
+    </a>
+  </div>
+</section>
+<section class="container-fluid results-Right" id="right">
+  <div class="list-group" id="article" ng-repeat="article in search.articles">
+    <a ui-sref="#" class="list-group-item">
+      <h4 class="list-group-item-heading">{{.title}}</h4>
+      <p class="list-group-item-text">{{.}}</p>
+    </a>
+  </div>
+</section>
+<section class="row">
+  <div class="col-xs-4 col-md-4">
+    <a ui-sref="#" class="thumbnail">
+      <img src="/images/Yi_Chen_noun_26092_donkey.png" alt="liberal-bias">
+    </a>
+  </div>
+  <div class="col-xs-4 col-md-4">
+    <a ui-sref="#" class="thumbnail">
+      <img src="/images/Lilit Kalachyan_noun_150137.png" alt="no-bias">
+    </a>
+  </div>
+  <div class="col-xs-4 col-md-4">
+    <a ui-sref="#" class="thumbnail">
+      <img src="/images/Yi_Chen_noun_26091_elephant.png" alt="conservative-bias">
     </a>
   </div>
 </section>
