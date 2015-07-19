@@ -29,10 +29,28 @@
     <![endif]-->
 
   <!-- NAVIGATION -->
-  <ul class="nav nav-tabs nav-justified">
-    <li role="presentation" class="active"><a ui-sref="home">Home</a></li>
-    <li role="presentation"><a ui-sref="about">About this APP</a></li>
-  </ul>
+  <nav class="navbar navbar-static-top text-center" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+              <span class="icon-bar text-center">&#8801;</span>
+              <span class="sr-only">Toggle navigation</span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse text-center" id="navbar">
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="home" role="button"><h3>HOME</h3></a></li>
+                <li><a ui-sref="about" role="button"><h3>About this APP</h3></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--  <ul class="navbar nav-justified text-center">
+    <li role="presentation" class="active"><a ui-sref="home"><h3>Home</h3></a></li>
+    <li role="presentation"><a ui-sref="about"><h3>About this APP</h3></a></li>
+  </ul>-->
 
   <!-- MAIN CONTENT -->
   <main ui-view class="container"></main>

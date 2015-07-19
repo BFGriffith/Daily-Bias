@@ -1,18 +1,20 @@
 <!-- searchResults.html -->
-<section class="container-fluid results-Left" id="left">
-  <div class="list-group" id="article" ng-repeat="article in search.articles">
-    <a href="#" class="list-group-item">
-      <h4 class="list-group-item-heading">{{.title}}</h4>
-      <p class="list-group-item-text">{{.}}</p>
-    </a>
+<section class="row">
+  <div class="container-fluid col-xs-6 col-md-6 results-Left" id="left">
+    <div class="list-group article" id="articleLeft" ng-repeat="article in search.articlesLeft">
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">{{.title}}</h4>
+        <p class="list-group-item-text">{{.}}</p>
+      </a>
+    </div>
   </div>
-</section>
-<section class="container-fluid results-Right" id="right">
-  <div class="list-group" id="article" ng-repeat="article in search.articles">
-    <a ui-sref="#" class="list-group-item">
-      <h4 class="list-group-item-heading">{{.title}}</h4>
-      <p class="list-group-item-text">{{.}}</p>
-    </a>
+  <div class="container-fluid col-xs-6 col-md-6 results-Right" id="right">
+    <div class="list-group article" id="articleRight" ng-repeat="article in search.articlesRight">
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">{{.title}}</h4>
+        <p class="list-group-item-text">{{.}}</p>
+      </a>
+    </div>
   </div>
 </section>
 <section class="row">
@@ -28,7 +30,7 @@
   </div>
   <div class="col-xs-4 col-md-4">
     <a ui-sref="#" class="thumbnail">
-      <img src="/images/Yi_Chen_noun_26091_elephant.png" alt="conservative-bias">
+      <img src="/images/Benjamin Harlow_noun_28997_elephant.png" alt="conservative-bias">
     </a>
   </div>
 </section>

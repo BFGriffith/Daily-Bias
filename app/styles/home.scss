@@ -7,7 +7,20 @@
     height: 100px;
     margin: auto;
     width: 400px;
+    padding: 1em;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
   }
+}
+.jumbotron {
+  padding: 1em;
+  margin: 0;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
