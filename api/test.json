@@ -1,0 +1,162 @@
+HTTP / 1.1 200 OK
+Cache - Control: no - cache, no - store, max - age = 0, must - revalidate
+Pragma: no - cache
+Expires: Fri, 01 Jan 1990 00: 00: 00 GMT
+Date: Mon, 06 Jul 2015 18: 10: 11 GMT
+Content - Type: text / javascript;
+charset = utf - 8
+X - Backend - Content - Length: 46335
+X - Embedded - Status: 200
+X - Content - Type - Options: nosniff
+X - Frame - Options: SAMEORIGIN
+X - XSS - Protection: 1;
+mode = block
+Server: GSE
+Alternate - Protocol: 443: quic, p = 1
+Accept - Ranges: none
+Vary: Accept - Encoding
+Transfer - Encoding: chunked
+
+{
+  "responseData": {
+    "results": [{
+      "GsearchResultClass": "GnewsSearch",
+      "clusterUrl": "http://news.google.com/news/story?ncl\u003ddhMFFI0IZcg7x9MY9JcTWt8jbTZVM\u0026hl\u003den\u0026ned\u003dus",
+      "content": "President \u003cb\u003eBarack Obama\u003c/b\u003e said Tuesday that last week – when he won historic victories on trade, health care and gay rights – was “gratifying,” but he stopped short of calling it his “best week ever,” as some pundits have. “In terms of my best week … now \u003cb\u003e...\u003c/b\u003e",
+      "unescapedUrl": "http://www.msnbc.com/msnbc/obama-reflects-his-best-week-ever",
+      "url": "http%3A%2F%2Fwww.msnbc.com%2Fmsnbc%2Fobama-reflects-his-best-week-ever",
+      "title": "\u003cb\u003eObama\u003c/b\u003e reflects on his \u0026#39;best week ever\u0026#39;",
+      "titleNoFormatting": "Obama reflects on his \u0026#39;best week ever\u0026#39;",
+      "location": "",
+      "publisher": "MSNBC",
+      "publishedDate": "Tue, 30 Jun 2015 10:59:03 -0700",
+      "signedRedirectUrl": "http://news.google.com/news/url?sa\u003dT\u0026ct2\u003dus\u0026fd\u003dS\u0026url\u003dhttp://www.msnbc.com/msnbc/obama-reflects-his-best-week-ever\u0026cid\u003d52778891410303\u0026ei\u003dLcSaVdCjI4TUqAXrl5KwAg\u0026usg\u003dAFQjCNGhm7q5qQbrqo0Ja54Gtj7DxaoC9g",
+      "language": "en",
+      "image": {
+        "url": "http://www.msnbc.com/sites/msnbc/files/ap_209809424806.jpg",
+        "tbUrl": "http://t3.gstatic.com/images?q\u003dtbn:ANd9GcSthG07Fxk9j0umewFXnR-U20DQdhaKMkuXhq7ZsIWz8qOgStXwLtRJZY6T",
+        "originalContextUrl": "http://www.msnbc.com/msnbc/obama-reflects-his-best-week-ever",
+        "publisher": "MSNBC",
+        "tbWidth": 80,
+        "tbHeight": 53
+      },
+      "relatedStories": [{
+        "unescapedUrl": "http://www.nbcnews.com/news/us-news/obama-raise-overtime-pay-nearly-5-million-workers-n384186",
+        "url": "http%3A%2F%2Fwww.nbcnews.com%2Fnews%2Fus-news%2Fobama-raise-overtime-pay-nearly-5-million-workers-n384186",
+        "title": "\u003cb\u003eObama\u003c/b\u003e to Expand Overtime Pay to Nearly 5 Million Workers",
+        "titleNoFormatting": "Obama to Expand Overtime Pay to Nearly 5 Million Workers",
+        "location": "",
+        "publisher": "NBCNews.com",
+        "publishedDate": "Mon, 29 Jun 2015 22:04:21 -0700",
+        "signedRedirectUrl": "http://news.google.com/news/url?sa\u003dT\u0026ct2\u003dus\u0026fd\u003dS\u0026url\u003dhttp://www.nbcnews.com/news/us-news/obama-raise-overtime-pay-nearly-5-million-workers-n384186\u0026cid\u003d52778891410303\u0026ei\u003dLcSaVdCjI4TUqAXrl5KwAg\u0026usg\u003dAFQjCNFdQSWYz4SZhX0EuqF_91wEjpRGvA",
+        "language": "en"
+      }]
+    }, {
+      "GsearchResultClass": "GnewsSearch",
+      "clusterUrl": "",
+      "content": "It was about eight months ago when Paul Krugman, who hasn\u0026#39;t always been \u003cb\u003ePresident Obama\u0026#39;s\u003c/b\u003e biggest fan, said what many in the political establishment would not. “Obama has emerged,” Krugman wrote, “as one of the most consequential and, yes,\u0026nbsp;...",
+      "unescapedUrl": "http://www.msnbc.com/rachel-maddow-show/obamas-place-history-becomes-even-more-secure",
+      "url": "http%3A%2F%2Fwww.msnbc.com%2Frachel-maddow-show%2Fobamas-place-history-becomes-even-more-secure",
+      "title": "\u003cb\u003eObama\u0026#39;s\u003c/b\u003e place in history becomes even more secure",
+      "titleNoFormatting": "Obama\u0026#39;s place in history becomes even more secure",
+      "location": "",
+      "publisher": "MSNBC",
+      "publishedDate": "Tue, 30 Jun 2015 13:48:45 -0700",
+      "signedRedirectUrl": "http://news.google.com/news/url?sa\u003dT\u0026ct2\u003dus\u0026fd\u003dS\u0026url\u003dhttp://www.msnbc.com/rachel-maddow-show/obamas-place-history-becomes-even-more-secure\u0026cid\u003d0\u0026ei\u003dLcSaVdCjI4TUqAXrl5KwAg\u0026usg\u003dAFQjCNF9Z5rdtgIeUe7UYeiMZ_6E_J4ANQ",
+      "language": "en",
+      "image": {
+        "url": "http://www.msnbc.com/sites/msnbc/files/ap_209809424806.jpg",
+        "tbUrl": "http://t3.gstatic.com/images?q\u003dtbn:ANd9GcSthG07Fxk9j0umewFXnR-U20DQdhaKMkuXhq7ZsIWz8qOgStXwLtRJZY6T",
+        "originalContextUrl": "http://www.msnbc.com/rachel-maddow-show/obamas-place-history-becomes-even-more-secure",
+        "publisher": "MSNBC",
+        "tbWidth": 80,
+        "tbHeight": 53
+      }
+    }, {
+      "GsearchResultClass": "GnewsSearch",
+      "clusterUrl": "",
+      "content": "Let\u0026#39;s put aside, at least for now, the fact that \u003cb\u003ePresident Obama\u003c/b\u003e has a pretty amazing record on job creation and ending the Great Recession. Let\u0026#39;s instead focus on his critic because Walker\u0026#39;s boast about his state\u0026#39;s “dramatic” economic recovery is \u003cb\u003e...\u003c/b\u003e",
+      "unescapedUrl": "http://www.msnbc.com/rachel-maddow-show/scott-walker-picks-fight-he-cant-win",
+      "url": "http%3A%2F%2Fwww.msnbc.com%2Frachel-maddow-show%2Fscott-walker-picks-fight-he-cant-win",
+      "title": "Scott Walker picks a fight he can\u0026#39;t win",
+      "titleNoFormatting": "Scott Walker picks a fight he can\u0026#39;t win",
+      "location": "",
+      "publisher": "MSNBC",
+      "publishedDate": "Thu, 02 Jul 2015 11:56:15 -0700",
+      "signedRedirectUrl": "http://news.google.com/news/url?sa\u003dT\u0026ct2\u003dus\u0026fd\u003dS\u0026url\u003dhttp://www.msnbc.com/rachel-maddow-show/scott-walker-picks-fight-he-cant-win\u0026cid\u003d52778893606985\u0026ei\u003dLcSaVdCjI4TUqAXrl5KwAg\u0026usg\u003dAFQjCNHx__atV-Int0Q2jQfGnm0auc_rjA",
+      "language": "en",
+      "image": {
+        "url": "http://www.msnbc.com/sites/msnbc/files/gettyimages-479249272_copy.jpg",
+        "tbUrl": "http://t0.gstatic.com/images?q\u003dtbn:ANd9GcQIXWo239Ur4j8vZGBMS9YjyEeIOGLXMNDsuCuKoiMbSZPyhaXKGmozibw",
+        "originalContextUrl": "http://www.msnbc.com/rachel-maddow-show/scott-walker-picks-fight-he-cant-win",
+        "publisher": "MSNBC",
+        "tbWidth": 80,
+        "tbHeight": 45
+      }
+    }, {
+      "GsearchResultClass": "GnewsSearch",
+      "clusterUrl": "http://news.google.com/news/story?ncl\u003ddIBQAONM5aRiaDMuvQTAtiR3havcM\u0026hl\u003den\u0026ned\u003dus",
+      "content": "With a rousing eulogy and a chorus of \u0026quot;Amazing Grace,\u0026quot; President \u003cb\u003eBarack Obama\u003c/b\u003e called on the country Friday to honor the nine victims of the South Carolina church massacre by working toward racial healing. He said that includes removing the Confederate\u0026nbsp;...",
+      "unescapedUrl": "http://www.nbcnews.com/storyline/charleston-church-shooting/coming-obama-delivers-eulogy-rev-clementa-pinckney-n382616",
+      "url": "http%3A%2F%2Fwww.nbcnews.com%2Fstoryline%2Fcharleston-church-shooting%2Fcoming-obama-delivers-eulogy-rev-clementa-pinckney-n382616",
+      "title": "\u003cb\u003ePresident Obama\u003c/b\u003e Delivers Eulogy for Rev. Clementa Pinckney",
+      "titleNoFormatting": "President Obama Delivers Eulogy for Rev. Clementa Pinckney",
+      "location": "",
+      "publisher": "NBCNews.com",
+      "publishedDate": "Fri, 26 Jun 2015 11:47:16 -0700",
+      "signedRedirectUrl": "http://news.google.com/news/url?sa\u003dT\u0026ct2\u003dus\u0026fd\u003dS\u0026url\u003dhttp://www.nbcnews.com/storyline/charleston-church-shooting/coming-obama-delivers-eulogy-rev-clementa-pinckney-n382616\u0026cid\u003d52778889301290\u0026ei\u003dLcSaVdCjI4TUqAXrl5KwAg\u0026usg\u003dAFQjCNEJW351g5IqYlW92ea9aryiWlR6aQ",
+      "language": "en",
+      "image": {
+        "url": "http://media2.s-nbcnews.com/j/MSNBC/Components/Video/__NEW/f_dc_obama_sing_150626.nbcnews-video-reststate-560.jpg",
+        "tbUrl": "http://t2.gstatic.com/images?q\u003dtbn:ANd9GcSdskVCiwr8OKgsohi3WnTcl3jDZThg5_o9q-PGYZjxe4Mp6ShlCjTaPdU8",
+        "originalContextUrl": "http://www.nbcnews.com/storyline/charleston-church-shooting/coming-obama-delivers-eulogy-rev-clementa-pinckney-n382616",
+        "publisher": "NBCNews.com",
+        "tbWidth": 80,
+        "tbHeight": 45
+      },
+      "relatedStories": [{
+        "unescapedUrl": "http://www.msnbc.com/msnbc/charleston-mourns-the-death-nine-slain-church",
+        "url": "http%3A%2F%2Fwww.msnbc.com%2Fmsnbc%2Fcharleston-mourns-the-death-nine-slain-church",
+        "title": "Charleston mourns the death of nine slain at church",
+        "titleNoFormatting": "Charleston mourns the death of nine slain at church",
+        "location": "",
+        "publisher": "MSNBC",
+        "publishedDate": "Fri, 26 Jun 2015 12:28:41 -0700",
+        "signedRedirectUrl": "http://news.google.com/news/url?sa\u003dT\u0026ct2\u003dus\u0026fd\u003dS\u0026url\u003dhttp://www.msnbc.com/msnbc/charleston-mourns-the-death-nine-slain-church\u0026cid\u003d52778889301290\u0026ei\u003dLcSaVdCjI4TUqAXrl5KwAg\u0026usg\u003dAFQjCNHzA-s1_R5jx5MFR-oM9u3C_g_gvg",
+        "language": "en"
+      }]
+    }],
+    "cursor": {
+      "pages": [{
+        "start": "0",
+        "label": 1
+      }, {
+        "start": "4",
+        "label": 2
+      }, {
+        "start": "8",
+        "label": 3
+      }, {
+        "start": "12",
+        "label": 4
+      }, {
+        "start": "16",
+        "label": 5
+      }, {
+        "start": "20",
+        "label": 6
+      }, {
+        "start": "24",
+        "label": 7
+      }, {
+        "start": "28",
+        "label": 8
+      }],
+      "estimatedResultCount": "382393",
+      "currentPageIndex": 0,
+      "moreResultsUrl": "http://news.google.com/nwshp?oe\u003dutf8\u0026ie\u003dutf8\u0026source\u003duds\u0026q\u003dbarack+obama/?msnbc\u0026hl\u003den\u0026start\u003d0"
+    }
+  },
+  "responseDetails": null,
+  "responseStatus": 200
+}

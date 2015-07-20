@@ -1,15 +1,13 @@
 <!-- home.html -->
-<div class="jumbotron">
-  <h1>Spin-Zone News</h1>
-  <p>Critically expose, juxtapose, and rate political bias by topic — contrasting the coverage of various journalistic sources across the political spectrum!</p>
-  <form class="navbar-form navbar-left" role="search">
+<section class="jumbotron" id="searchbox">
+  <h1 class="text-center" id="appName">Daily-Bias News</h1>
+  <p>Critically expose, juxtapose, and rate political bias by topic — contrasting the coverage-slant of various journalistic sources across the political spectrum!</p>
+  <form class="navbar-form navbar-center" role="search" ng-controller="SearchController as search" ng-submit="search.submitSearch()">
     <div class="form-group">
-      <input type="text" class="form-control" placeholder="SEARCH">
+      <input type="text" id="searchbar" ng-model="searchText" ng-trim="true" ng-required="true" class="form-control .input-large search-query" placeholder="input news-SEARCH keyword(s) here!">
+      <input type="submit" id="submit"  value="Submit" />
     </div>
-    <button>
-      <a class="btn" type="submit" id="search" ui-sref="results">
-        <img src="/images/noun_150137_cc.png" width="30px" height="90%" alt="search" /></a>
-    </button>
-    <!--<button type="submit" class="btn btn-default">Submit</button>-->
   </form>
-</div>
+</section>
+<div id="branding"  style="float: left;"></div><br />
+<div id="content">Loading...</div>
