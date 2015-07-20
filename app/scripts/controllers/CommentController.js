@@ -10,7 +10,7 @@
         this.comments;
 
         this.comment = {
-          author: '',
+          publisher: '',
           parentArticle: '',
           title: '',
           commentText: '',
@@ -30,14 +30,14 @@
 
 
           self.comment = {
-            author: '',
+            publisher: '',
             parentArticle: '',
             title: '',
             commentText: '',
             createdOn: '',
             createdBy: ''
           };
-          $state.go('recentComments');
+          $state.go('comments');
         }; //END addComment
       }); //END CommentController
 
