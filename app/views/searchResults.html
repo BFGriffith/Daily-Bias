@@ -1,11 +1,36 @@
 <!-- searchResults.html -->
-<section>
-<div>
-  <h3>MSNBC</h3>
-  <p>Obama ispsum</p>
-</div>
-<div>
-  <h3>Fox</h3>
-  <p>Romney ispsum</p>
-</div>
+<section class="row">
+  <div class="container-fluid col-xs-6 col-md-6 results-Left" id="left">
+    <div class="list-group article" id="articleLeft" ng-repeat="article in search.articlesLeft">
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading"><span class="badge">{{42}}</span> {{.title}} <span class="badge">{{42}}</span></h4>
+        <p class="list-group-item-text">{{.}}</p>
+      </a>
+    </div>
+  </div>
+  <div class="container-fluid col-xs-6 col-md-6 results-Right" id="right">
+    <div class="list-group article" id="articleRight" ng-repeat="article in search.articlesRight">
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading"><span class="badge">{{42}}</span> {{.title}} <span class="badge">{{42}}</span></h4>
+        <p class="list-group-item-text">{{.}}</p>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="row">
+  <div class="col-xs-4 col-md-4">
+    <a ng-click="#" class="thumbnail">
+      <img src="/images/Yi_Chen_noun_26092_donkey.png" alt="liberal-bias">
+    </a>
+  </div>
+  <div class="col-xs-4 col-md-4">
+    <a ng-click="#" class="thumbnail">
+      <img src="/images/Lilit Kalachyan_noun_150137.png" alt="no-bias">
+    </a>
+  </div>
+  <div class="col-xs-4 col-md-4">
+    <a ng-click="#" class="thumbnail">
+      <img src="/images/Benjamin Harlow_noun_28997_elephant.png" alt="conservative-bias">
+    </a>
+  </div>
 </section>

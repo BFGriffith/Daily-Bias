@@ -11,7 +11,7 @@
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
-
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
@@ -22,14 +22,14 @@
 
 <body>
   <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience. The Google News Search API currently supports Firefox 1.5+, Internet-Explorer6+, Safari, Opera 9+, and Chrome.</p>
     <![endif]-->
 
   <!-- NAVIGATION -->
-  <ul class="nav nav-tabs nav-justified">
-    <li role="presentation" class="active"><a ui-sref="home">Home</a></li>
+  <ul class="navbar nav-justified col-lg-8" id="navigation">
+    <li class="btn btn-default" role="button" class="active"><a ui-sref="home"><h3>Home</h3></a></li>
     <li role="presentation"><a ui-sref="login" ng-click="login.login()">Login</a></li>
-    <li role="presentation"><a ui-sref="about">About this APP</a></li>
+    <li class="btn btn-default" role="button"><a ui-sref="about"><h3>About this APP</h3></a></li>
   </ul>
 
   <!-- MAIN CONTENT -->
@@ -38,13 +38,10 @@
   <!-- FOOTER -->
   <footer class="container-fluid" id="footerContainer">
     <div id="footerContent">
-    <p>©2015 — Ben Griffith: front-end developer for hire</p>
-    <p>
-      <small>All Rights Reserved.</small>
-    </p>
+    <small><p>©2015 — Ben Griffith: front-end developer for hire<br>&#11019; CONTACT &#11018;</p></small>
     <ul class="nav nav-pills nav-justified" role="tablist">
-      <li role="navigation"><a href="https://github.com/Epicurean306/Daily-Bias" target="_blank">GitHub</a></li>
-      <li role="navigation"><a href="mailto:benjaminforbesgriffith@gmail.com">Contact Ben by eMail</a></li>
+      <li role="navigation"><a href="https://github.com/Epicurean306/Daily-Bias" target="_blank"><small>GitHub</small></a></li>
+      <li role="navigation"><a href="mailto:benjaminforbesgriffith@gmail.com"><small>eMail</small></a></li>
     </ul>
   </div>
   </footer>
