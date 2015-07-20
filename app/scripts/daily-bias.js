@@ -22,9 +22,17 @@
         .state('login', {
           url: '/login',
           templateUrl: '/views/login.html'
-            // controller: 'LoginController',
-            // controllerAs: 'login'
-        }) //END Login
+          // controller: 'LoginController',
+          // controllerAs: 'login'
+        }) //END LoginController
+        .state('addComment', {
+          url: '/comment',
+          templateUrl: '/views/addComment.html'
+        }) //END addComment
+        .state('comments', {
+          url: '/comments',
+          templateUrl: '/views/comments.html'
+        }) //END comments
         .state('about', {
           url: '/about',
           templateUrl: '/views/about.html'
@@ -33,6 +41,6 @@
           url: '/404',
           templateUrl: '/views/404.html'
         }); //END 404
+        angular.module('daily-bias').constant('FIREBASE_URL', 'https://daily-bias.firebaseio.com/');
     }); //END routing function
-  angular.module('daily-bias').constant('FIREBASE_URL', 'https://daily-bias.firebaseio.com/');
 })();
