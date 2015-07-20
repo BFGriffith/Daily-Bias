@@ -23,6 +23,10 @@
         // controller: 'LoginController',
         // controllerAs: 'login'
       })
+      .state('addComment', {
+        url: '/comment',
+        templateUrl: '/views/comment.html'
+      }) //END comment
       .state('about', {
         url: '/about',
         templateUrl: '/views/about.html'
