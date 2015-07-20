@@ -41,7 +41,7 @@
   },
   "name": "daily-bias",
   "description": "Critically expose, juxtapose, and rate political bias by topic — contrasting the coverage of various journalistic sources across the political spectrum!",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "gulpfile.babel.js",
   "directories": {
     "test": "test"
