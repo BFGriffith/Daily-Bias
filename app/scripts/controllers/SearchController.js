@@ -1,9 +1,43 @@
-/*
 (function() {
-    'use strict';
-    //angular.module('daily-bias', ['ui.router']);
+  'use strict';
+  angular.module('daily-bias')
+
+  .controller('SearchController', function($http) {
+
+    this.searchResults = [];
+    var self = this;
+
+      /*
+      this.submitSearch = function() {
+          $(document).ready(function() {
+      */
+
+    $http.get("/api/MSNBC_Charleston.json")
+      .then(function(response) {
+        self.searchResults = response.data.results;
+        console.log(response);
+        console.log(self.searchResults);
+      });
+
+  }); // END SearchController
+})(); //END IIFE
+/*
+          function localJsonpCallback(json) {
+                  if (!json.Error) {
+                      $('#resultForm').submit();
+                  }
+                  else {
+                      $('#loading').hide();
+                      $('#userForm').show();
+                      alert(json.Message);
+                  }
+              }
+*/
+
+//  }); //END SearchController function
 
 
+/*
   angular.module('daily-bias')
   .controller('SearchController', function() {
 
@@ -105,6 +139,3 @@ this.submitSearch = function(){
         };
       };
 */
-
-
-//})(); //END IIFE
