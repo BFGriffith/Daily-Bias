@@ -1,5 +1,11 @@
 #searchbar {
-  width: auto;
+  width: 20em;
+  height: auto;
+}
+#submitSearch {
+  height: 50px;
+  width: 70px;
+  position: relative;
 }
 .jumbotron {
   padding: 1em;

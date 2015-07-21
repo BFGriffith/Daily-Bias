@@ -1,7 +1,7 @@
 <!-- searchResults.html -->
 <section class="row">
   <div class="container-fluid col-xs-6 col-md-6 results-Left" id="left">
-    <p class="list-group-item-text" ng-repeat="search in search.searchResults">{{searchResults.query}}</p>
+    <p class="list-group-item-text" ng-repeat="search in search.searchResults">{{search.searchResults.query}}</p>
     <div class="list-group article" id="articleLeft" ng-repeat="search in search.searchResults">
       <a href="{{searchResults.url}}" class="list-group-item">
         <h4 class="list-group-item-heading"><span class="badge">{{42}}</span> {{searchResults.title}} <span class="badge">{{42}}</span></h4>
@@ -20,17 +20,17 @@
 </section>
 <section class="row">
   <div class="col-xs-4 col-md-4">
-    <a ng-click="#" class="thumbnail">
+    <a ng-click="" class="thumbnail">
       <img src="/images/Yi_Chen_noun_26092_donkey.png" width="100px" height="100px" alt="liberal-bias">
     </a>
   </div>
   <div class="col-xs-4 col-md-4">
-    <a ng-click="#" class="thumbnail">
+    <a ng-click="" class="thumbnail">
       <img src="/images/Lilit Kalachyan_noun_150137.png" width="100px" height="100px" alt="no-bias">
     </a>
   </div>
   <div class="col-xs-4 col-md-4">
-    <a ng-click="#" class="thumbnail">
+    <a ng-click="" class="thumbnail">
       <img src="/images/Benjamin Harlow_noun_28997_elephant.png" width="100px" height="100px" alt="conservative-bias">
     </a>
   </div>
