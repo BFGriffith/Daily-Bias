@@ -1,32 +1,27 @@
 (function() {
-    'use strict';
-    angular.module('daily-bias')
+  'use strict';
+  angular.module('daily-bias')
 
-    .controller('SearchController', function($http) {
+  .controller('SearchController', function($http) {
 
-        this.searchResults = [];
-        var self = this;
+    this.searchResults = [];
+    var self = this;
 
-      /*
-        this.submitSearch = function() {
-            $(document).ready(function() {
-            */
+    /*
+      this.submitSearch = function() {
+          $(document).ready(function() {
+          */
 
 
-            $http.get("/api/left.json")
-              .then (function(response) {
-                // $.each(data.results, function(i, item) {
-                //   jQuery('<div/>', {
-                //     text: item.title
-                //   }).appendTo('#results');
-                // });
-                self.searchResults = response.data.results;
-                console.log(response);
-                console.log(self.searchResults);
-              });
+    $http.get("/api/left.json")
+      .then(function(response) {
+        self.searchResults = response.data.results;
+        console.log(response);
+        console.log(self.searchResults);
+      });
 
-          });// END SearchController
-        })(); //END IIFE
+  }); // END SearchController
+})(); //END IIFE
 /*
           function localJsonpCallback(json) {
                   if (!json.Error) {
@@ -40,10 +35,10 @@
               }
 */
 
-      //  }); //END SearchController function
+//  }); //END SearchController function
 
 
-  /*
+/*
   angular.module('daily-bias')
   .controller('SearchController', function() {
 
@@ -113,35 +108,35 @@ this.submitSearch = function(){
     });
 */
 
-  /*
-  .controller('SearchController', function($http) {
-      var self = this;
-      self.search = [];
+/*
+.controller('SearchController', function($http) {
+    var self = this;
+    self.search = [];
 
 
-  this.submitSearch = function(){
-      $http.jsonp('https://ajax.googleapis.com/ajax/services/search/news?v=1.0&q=barack%20obama&callback=JSON_CALLBACK')
-        .then(function(response) {
-          console.log(response);
-          self.search = response.data;
-        });
-      };
-    });
-  */
+this.submitSearch = function(){
+    $http.jsonp('https://ajax.googleapis.com/ajax/services/search/news?v=1.0&q=barack%20obama&callback=JSON_CALLBACK')
+      .then(function(response) {
+        console.log(response);
+        self.search = response.data;
+      });
+    };
+  });
+*/
 
-  /*
-    angular.module('daily-bias')
+/*
+  angular.module('daily-bias')
 
-    .controller('SearchController', function submitSearch($http) {
-        $http.get('https://ajax.googleapis.com/ajax/services/search/news?' + 'callback=JSON_CALLBACK', {
-            params: {
-              "version": "1.0",
-              "language": "en"
-            }
-            .then
-                  console.log();
-                });
+  .controller('SearchController', function submitSearch($http) {
+      $http.get('https://ajax.googleapis.com/ajax/services/search/news?' + 'callback=JSON_CALLBACK', {
+          params: {
+            "version": "1.0",
+            "language": "en"
+          }
+          .then
+                console.log();
+              });
 
-          };
         };
-  */
+      };
+*/
