@@ -1,32 +1,65 @@
 /*global angular Firebase*/
 (function() {
-    'use strict';
-    angular.module('daily-bias')
+  'use strict';
+
+  angular.module('daily-bias')
     .controller('LoginController', function() {
-          var newUser = true;
-          var ref = new Firebase('https://daily-bias.firebaseio.com/');
-          ref.authWithOAuthPopup('facebook', function(error, authData) {
-            if (error) {
-              console.log('Login Failed!', error);
-            } else {
-              console.log('Authenticated successfully with payload:', authData);
-            }
-          }, {
-            remember: 'sessionOnly'
-          });
-          function getName(authData) {
-              return authData.facebook.displayName;
-          }
-          ref.onAuth(function(authData) {
-            if (authData && newUser) {
-              ref.child('users').child(authData.uid).set({
-                provider: authData.provider,
-                name: getName(authData)
-              });
-            }
-          });
-      });
-})();
+      var newUser = true;
+      var ref = new Firebase("https://daily-bias.firebaseio.com");
+
+    function login(){
+      ref.authWithOAuthPopup("facebook", function(error, authData) {
+        if (error) {
+          console.log("Login Failed!", error);
+        } else {
+          //access token will allow us to make Open Graph API calls
+          console.log(authData.facebook.accessToken);
+        }
+      }, {// the permissions requested...
+        scope: "public_profile",
+        remember: 'sessionOnly'
+      })
+    };
+      function authDataCallback(authData) {
+        if (authData) {
+          console.log('User ' + authData.uid + ' is logged in with ' + authData.provider);
+        } else {
+          console.log('User is logged out');
+        }
+      }
+
+    });//END LoginController
+
+
+
+// firebaseFB.onAuth(authDataCallback);
+//       function getName(authData) {
+//         switch (authData.provider) {
+//           case 'password':
+//             return authData.password.email.replace(/@.*/, '');
+//           case 'twitter':
+//             return authData.twitter.displayName;
+//           case 'facebook':
+//             return authData.facebook.displayName;
+//         }
+//       }
+// var firebaseFB =
+//       firebaseFB.onAuth(function(authData) {
+//         if (authData) {
+//           // save the user's profile into the database so we can list users,
+//           // use them in Security and Firebase Rules, and show profiles
+//           firebaseFB.child('users').child(authData.uid).update({
+//             provider: authData.provider,
+//             name: getName(authData)
+//           });
+//         }
+//         console.log('work');
+//       }); //end newUser Auth
+
+
+
+
+})();//END IIFE
 
 
 /*
