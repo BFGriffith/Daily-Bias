@@ -13,6 +13,7 @@
           publisher: '',
           parentArticle: '',
           title: '',
+          url: '',
           commentText: '',
           createdOn: '',
           createdBy: ''
@@ -24,7 +25,7 @@
           self.comment.createdOn = timestamp;
           self.comment.createdBy = self.authData.facebook.username;
           var author = self.comment.login;
-          var parentArticle = self.article_url;
+          var parentArticle = self.url;
           var title = self.comment.title;
           var commentText = self.comment.commentText;
 
@@ -33,6 +34,7 @@
             publisher: '',
             parentArticle: '',
             title: '',
+            url: '',
             commentText: '',
             createdOn: '',
             createdBy: ''
@@ -41,4 +43,4 @@
         }; //END addComment
       }); //END CommentController
 
-})();
+})(); //END IIFE

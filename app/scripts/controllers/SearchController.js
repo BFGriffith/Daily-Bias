@@ -7,11 +7,10 @@
     this.searchResults = [];
     var self = this;
 
-    /*
+      /*
       this.submitSearch = function() {
           $(document).ready(function() {
-          */
-
+      */
 
     $http.get("/api/left.json")
       .then(function(response) {
