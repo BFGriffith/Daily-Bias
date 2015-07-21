@@ -13,13 +13,12 @@
         .then(function(response) {
           self.searchResults = response.data.results;
           console.log(response);
-          console.log(self.searchResults);
+          //console.log(self.searchResults);
+
           $state.go('searchResults');
-
         });
-
-    };
-  }); // END SearchController function
+    }; //END nesting function
+  }); //END SearchController function
 })(); //END IIFE
 
 
