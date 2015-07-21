@@ -12,7 +12,7 @@
           $(document).ready(function() {
       */
 
-    $http.get("/api/left.json")
+    $http.get("/api/MSNBC_Charleston.json")
       .then(function(response) {
         self.searchResults = response.data.results;
         console.log(response);
