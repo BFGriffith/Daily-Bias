@@ -2,23 +2,23 @@
   'use strict';
   angular.module('daily-bias')
 
-  .controller('SearchController', function($http) {
+  .controller('SearchController', function($http, $state) {
 
     this.searchResults = [];
     var self = this;
 
-      /*
-      this.submitSearch = function() {
-          $(document).ready(function() {
-      */
+    this.submitSearch = function() {
 
-    $http.jsonp('https://ajax.googleapis.com/ajax/services/search/news?v=1.0' + '&q=' + 'MSNBC%20' + 'barack%20obama' + '&callback=JSON_CALLBACK')
-      .then(function(response) {
-        self.searchResults = response.data.results;
-        console.log(response);
-        console.log(self.searchResults);
-      });
+      $http.jsonp('https://ajax.googleapis.com/ajax/services/search/news?v=1.0' + '&q=' + 'MSNBC%20' + 'barack%20obama' + '&callback=JSON_CALLBACK')
+        .then(function(response) {
+          self.searchResults = response.data.results;
+          console.log(response);
+          console.log(self.searchResults);
+          $state.go('searchResults');
 
+        });
+
+    };
   }); // END SearchController function
 })(); //END IIFE
 
