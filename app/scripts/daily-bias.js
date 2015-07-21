@@ -3,10 +3,14 @@
 (function() {
   'use strict';
 
-  angular.module('daily-bias', ['ui.router'])
+  angular.module('daily-bias', [
+    'ui.router',
+    'restangular',
+    'firebase'
+    ])
     .config(function($stateProvider, $urlRouterProvider) {
 
-      $urlRouterProvider.otherwise('/404');
+      $urlRouteProvider.otherwise('/404');
 
       $stateProvider
         .state('home', {
