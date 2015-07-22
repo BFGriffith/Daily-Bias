@@ -15,7 +15,7 @@
       <article class="list-group article" id="articleLeft" >
         <a href="{{searchResult.unescapedUrl}}" class="list-group-item">
           <h4 class="list-group-item-heading">
-            <span class="badge Left_bias">{{n}}</span>
+            <span class="badge Left_bias">{{42}}</span>
             {{searchResult.titleNoFormatting}}
             <span class="badge Right_bias">{{42}}</span>
           </h4>
@@ -40,6 +40,26 @@
 </main>
 <!-- RATE-BIAS -->
 <section class="row">
+  <div class="input-group">
+    <span class="input-group-addon">
+      <input type="radio" aria-label="radical liberal bias">
+    </span>
+    <span class="input-group-addon">
+      <input type="radio" aria-label="liberal bias">
+    </span>
+    <span class="input-group-addon">
+      <input type="radio" aria-label="no bias rated, default state">
+    </span>
+    <span class="input-group-addon">
+      <input type="radio" aria-label="conservative bias">
+    </span>
+    <span class="input-group-addon">
+      <input type="radio" aria-label="Right-wing reactionary bias">
+    </span>
+    <!--<input type="text" class="form-control" aria-label="...">-->
+  </div>
+</section>
+<section class="row">
   <div class="col-xs-4 col-md-4">
     <a ng-click="" class="thumbnail">
       <img src="/images/Yi_Chen_noun_26092_donkey.png" width="100px" height="100px" alt="liberal-bias">
@@ -56,3 +76,16 @@
     </a>
   </div>
 </section>
+<!-- PAGINATION -->
+<nav>
+  <ul class="pagination pagination-sm">
+    <li class="disabled">
+      <span>
+        <span aria-hidden="true">&laquo;</span>
+      </span>
+    </li>
+    <li class="active">
+      <span>1 <span class="sr-only">(current)</span></span>
+    </li>
+  </ul>
+</nav>
