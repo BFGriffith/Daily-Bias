@@ -13,7 +13,10 @@
         params: {
           "v": "1.0",
           "q": "barack obama",
-          "hl": "en"
+          "hl": "en",
+          "rsz": "8",
+          "topic": "p",
+          "start": "1"
         }
       })
 
