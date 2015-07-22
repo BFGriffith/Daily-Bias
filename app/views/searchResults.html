@@ -1,37 +1,43 @@
 <!-- searchResults.html -->
-<div ng-controller="SearchResultsController as search">
-<section class="container-fluid" role="presentation" id="searchbox">
-  <form class="navbar-form navbar-center" role="search"  ng-submit="search.submitSearch()">
-    <div class="form-group">
-      <input type="text" id="searchbar" ng-model="searchText" ng-trim="true" ng-required="true" class="form-control input-large search-query" placeholder="Would you like to perform a different search?">
-      <img src="/images/powered_by_google.gif" width="100px" height="18px" alt="powered by Google news-search" border="0" />
-      <input type="image" type="submit" id="submitSearch" src="/images/daily-bias.png" alt="Submit Form" value="Submit" />
-    </div>
-  </form>
-</section>
-<!-- RESULTS -->
-<section class="row" >
-  <div class="container-fluid col-xs-6 col-md-6 results-Left" id="left">
-    <div class="list-group article" id="articleLeft" ng-repeat="searchResult in search.searchResults">
-      <a href="{{searchResult.url}}" class="list-group-item">
-        <h4 class="list-group-item-heading"><span class="badge">{{n}}</span>
-          {{searchResult.title}}
-          <span class="badge">{{42}}</span></h4>
-      </a>
-    </div>
-  </div>
-</section>
-</div>
-  <!-- <section class="row" ng-controller="SearchResultsController as search">
-    <div class="container-fluid col-xs-6 col-md-6 results-Right" id="right">
-      <p class="list-group-item-text" ng-repeat="search in search.searchResults">{{searchResults.query}}</p>
-      <div class="list-group article" id="articleRight" ng-repeat="search in search.searchResults">
-        <a href="{{searchResults.url}}" class="list-group-item">
-          <h4 class="list-group-item-heading"><span class="badge">{{42}}</span> {{searchResults.title}} <span class="badge">{{42}}</span></h4>
+<div class="container-fluid" ng-controller="SearchResultsController as search">
+  <section class="container-fluid" role="presentation" id="searchbox">
+    <form class="navbar-form navbar-center" role="search" ng-submit="search.submitSearch()">
+      <div class="form-group">
+        <input type="text" id="searchbar" ng-model="searchText" ng-trim="true" ng-required="true" class="form-control input-large search-query" placeholder="Would you like to perform a different search?">
+        <img src="/images/powered_by_google.gif" width="100px" height="18px" alt="powered by Google news-search" border="0" />
+        <input type="image" type="submit" id="submitSearch" src="/images/daily-bias.png" alt="Submit Form" value="Submit" />
+      </div>
+    </form>
+  </section>
+  <!-- RESULTS -->
+  <section class="row" ng-repeat="searchResult in search.searchResults">
+    <div class="container-fluid col-xs-6 col-md-6 col-lg-6 results-Left" id="left">
+      <div class="list-group article" id="articleLeft" >
+        <a href="{{searchResult.unescapedUrl}}" class="list-group-item">
+          <h4 class="list-group-item-heading">
+            <span class="badge">{{n}}</span>
+            {{searchResult.titleNoFormatting}}
+            <span class="badge">{{42}}</span>
+          </h4>
         </a>
       </div>
     </div>
-</section> -->
+  </section>
+  <section class="row" ng-repeat="searchResult in search.searchResults">
+    <div class="container-fluid col-xs-6 col-md-6 col-lg-6results-Right" id="right">
+      <p class="list-group-item-text">{{searchResult.query}}</p>
+      <div class="list-group article" id="articleRight">
+        <a href="{{searchResult.unescapedUrl}}" class="list-group-item">
+          <h4 class="list-group-item-heading">
+            <span class="badge">{{42}}</span>
+            {{searchResult.titleNoFormatting}}
+            <span class="badge">{{42}}</span>
+          </h4>
+        </a>
+      </div>
+    </div>
+  </section> -->
+</div>
 <!-- RATE-BIAS -->
 <section class="row">
   <div class="col-xs-4 col-md-4">

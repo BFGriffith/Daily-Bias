@@ -9,18 +9,19 @@
 
     this.submitSearch = function() {
 
-      $http.jsonp('https://ajax.googleapis.com/ajax/services/search/news?callback=JSON_CALLBACK',{
-        params:{
-          "v":"1.0",
-          "q":"barack obama"
+      $http.jsonp('https://ajax.googleapis.com/ajax/services/search/news?callback=JSON_CALLBACK', {
+        params: {
+          "v": "1.0",
+          "q": "barack obama",
+          "hl": "en"
         }
       })
 
-        .then(function(response) {
-          self.searchResults = response.data.responseData.results;
-          console.log(response);
-          //console.log(self.searchResults);
-        });
+      .then(function(response) {
+        self.searchResults = response.data.responseData.results;
+        console.log(response);
+        //console.log(self.searchResults);
+      });
     }; //END nesting function
   }); //END SearchController function
 })(); //END IIFE
