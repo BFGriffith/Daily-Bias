@@ -1,11 +1,14 @@
-#article-Left #article-Right {
-  width: 40%;
-  padding: 1em;
-  margin: 0;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+#results {
+  article h4 {
+    background-color: #fff;
+    opacity: 0.9;
+    filter:alpha(opacity=90);
+  }
+  article a {
+    background-color: #fff;
+    opacity: 0.9;
+    filter:alpha(opacity=90);
+  }
 }
 .Left_bias {
   color: lightgrey;
@@ -15,3 +18,4 @@
   color: lightgray;
   background-color: red;
 }
+.

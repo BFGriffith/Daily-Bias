@@ -11,20 +11,22 @@
   </section>
   <!-- RESULTS -->
   <div class="row">
-  <section ng-repeat="searchResult in search.searchResults" id="results-Right" class="container-fluid col-xs-12 col-sm-6 col-md-4 col-lg-3">
-    <!--<p class="list-group-item-text">{{searchResult.query}}</p>-->
-      <article class="list-group article" id="articleRight">
+    <section ng-repeat="searchResult in search.searchResults" id="results" class="container-fluid col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <article class="list-group article" id="article">
+        <h4 class="list-group-item" id="articleTitle">
+          <span class="badge Left_bias">{{42}}</span>
+          {{searchResult.titleNoFormatting}}
+          <span class="badge Right_bias">{{42}}</span>
+        </h4>
+
+
+
         <a href="{{searchResult.unescapedUrl}}" class="list-group-item">
-          <h4 class="list-group-item-heading">
-            <span class="badge Left_bias">{{42}}</span>
-            {{searchResult.titleNoFormatting}}
-            <span class="badge Right_bias">{{42}}</span>
-          </h4>
           <p class="articleAbstract">{{searchResult.content}}</p>
         </a>
       </article>
-  </section>
-</div>
+    </section>
+  </div>
 </main>
 <!-- RATE-BIAS -->
 <section class="row">
