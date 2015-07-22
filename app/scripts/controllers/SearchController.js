@@ -1,24 +1,32 @@
 (function() { //$http.jsonp to DOM — GoogleNews JSONP CORS workaround
-  'use strict';
-  angular.module('daily-bias')
+'use strict';
+angular.module('daily-bias' ['daily-bias'])
 
-  .controller('SearchController', function($http, $state) {
 
-    this.searchResults = [];
-    var self = this;
+.controller('SearchController', function($scope, $http, $state) {
+  $scope.widget = {
+    title: 'abc'
+  };
 
-    this.submitSearch = function() {
+  $scope.set = function(new_title) {
+    this.widget.title = new_title;
+  }
 
-      $http.jsonp('https://ajax.googleapis.com/ajax/services/search/news?v=1.0' + '&q=' + 'MSNBC%20' + 'barack%20obama' + '&callback=JSON_CALLBACK')
-        .then(function(response) {
-          self.searchResults = response.data.results;
-          console.log(response);
-          //console.log(self.searchResults);
 
-          $state.go('searchResults');
-        });
-    }; //END nesting function
-  }); //END SearchController function
+  /*
+      this.searchQuery = [];
+      var self = this;
+
+      this.submitQuery = function() {
+  */
+
+
+
+
+  $state.go('searchResults');
+//});
+//}; //END nesting function
+}); //END SearchController function
 })(); //END IIFE
 
 

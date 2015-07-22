@@ -1,6 +1,7 @@
 <!-- searchResults.html -->
+<div ng-controller="SearchResultsController as search">
 <section class="container-fluid" role="presentation" id="searchbox">
-  <form class="navbar-form navbar-center" role="search" ng-controller="SearchResultsController as search" ng-submit="search.submitSearch()">
+  <form class="navbar-form navbar-center" role="search"  ng-submit="search.submitSearch()">
     <div class="form-group">
       <input type="text" id="searchbar" ng-model="searchText" ng-trim="true" ng-required="true" class="form-control input-large search-query" placeholder="Would you like to perform a different search?">
       <img src="/images/powered_by_google.gif" width="100px" height="18px" alt="powered by Google news-search" border="0" />
@@ -8,18 +9,20 @@
     </div>
   </form>
 </section>
-
-<section class="row" ng-controller="SearchResultsController as search">
+<!-- RESULTS -->
+<section class="row" >
   <div class="container-fluid col-xs-6 col-md-6 results-Left" id="left">
-    <p class="list-group-item-text" ng-repeat="search in search.searchResults">{{search.searchResults.query}}</p>
-    <div class="list-group article" id="articleLeft" ng-repeat="(responseData.results) in search.searchResults">
-      <a href="{{searchResults.url}}" class="list-group-item">
-        <h4 class="list-group-item-heading"><span class="badge">{{42}}</span> {{searchResults.title}} <span class="badge">{{42}}</span></h4>
+    <div class="list-group article" id="articleLeft" ng-repeat="searchResult in search.searchResults">
+      <a href="{{searchResult.url}}" class="list-group-item">
+        <h4 class="list-group-item-heading"><span class="badge">{{n}}</span>
+          {{searchResult.title}}
+          <span class="badge">{{42}}</span></h4>
       </a>
     </div>
   </div>
 </section>
-  <section class="row" ng-controller="SearchResultsController as search">
+</div>
+  <!-- <section class="row" ng-controller="SearchResultsController as search">
     <div class="container-fluid col-xs-6 col-md-6 results-Right" id="right">
       <p class="list-group-item-text" ng-repeat="search in search.searchResults">{{searchResults.query}}</p>
       <div class="list-group article" id="articleRight" ng-repeat="search in search.searchResults">
@@ -28,7 +31,8 @@
         </a>
       </div>
     </div>
-</section>
+</section> -->
+<!-- RATE-BIAS -->
 <section class="row">
   <div class="col-xs-4 col-md-4">
     <a ng-click="" class="thumbnail">
