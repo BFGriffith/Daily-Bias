@@ -12,10 +12,10 @@
   <!-- RESULTS -->
   <div class="row">
     <section ng-repeat="searchResult in search.searchResults" id="results" class="container-fluid col-xs-12 col-sm-6 col-md-4 col-lg-3">
-      <article class="list-group article" id="article">
+      <article class="list-group well article" id="article">
         <h4 class="list-group-item" id="articleTitle">
           <span class="badge Left_bias">{{42}}</span>
-          {{searchResult.titleNoFormatting}}
+          <span>{{searchResult.titleNoFormatting}} — <strong>{{searchResult.publisher}}</strong></span>
           <span class="badge Right_bias">{{42}}</span>
         </h4>
 

@@ -29,8 +29,6 @@
   }); //END SearchController function
 })(); //END IIFE
 
-
-
 /*
           function localJsonpCallback(json) {
                   if (!json.Error) {
@@ -42,21 +40,4 @@
                       alert(json.Message);
                   }
               }
-*/
-
-/*
-  angular.module('daily-bias')
-
-  .controller('SearchController', function submitSearch($http) {
-      $http.get('https://ajax.googleapis.com/ajax/services/search/news?' + 'callback=JSON_CALLBACK', {
-          params: {
-            "version": "1.0",
-            "language": "en"
-          }
-          .then
-                console.log();
-              });
-
-        };
-      };
 */
