@@ -11,7 +11,7 @@
   </section>
   <!-- RESULTS -->
   <div class="row">
-  <section ng-repeat="searchResult in search.searchResults" id="results-Right" class="container-fluid col-xs-12 col-md-6 col-lg-4">
+  <section ng-repeat="searchResult in search.searchResults" id="results-Right" class="container-fluid col-xs-12 col-sm-6 col-md-4 col-lg-3">
     <!--<p class="list-group-item-text">{{searchResult.query}}</p>-->
       <article class="list-group article" id="articleRight">
         <a href="{{searchResult.unescapedUrl}}" class="list-group-item">
@@ -30,19 +30,19 @@
 <section class="row">
   <div class="input-group">
     <span class="input-group-addon">
-      <input type="radio" aria-label="radical liberal bias">
+      <input type="checkbox" aria-label="radical liberal bias">
     </span>
     <span class="input-group-addon">
-      <input type="radio" aria-label="liberal bias">
+      <input type="checkbox" aria-label="liberal bias">
     </span>
     <span class="input-group-addon">
-      <input type="radio" aria-label="no bias rated, default state">
+      <input type="checkbox" aria-label="no bias rated, default state">
     </span>
     <span class="input-group-addon">
-      <input type="radio" aria-label="conservative bias">
+      <input type="checkbox" aria-label="conservative bias">
     </span>
     <span class="input-group-addon">
-      <input type="radio" aria-label="Right-wing reactionary bias">
+      <input type="checkbox" aria-label="Right-wing reactionary bias">
     </span>
     <!--<input type="text" class="form-control" aria-label="...">-->
   </div>
