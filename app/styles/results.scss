@@ -1,4 +1,4 @@
-#left #right {
+#article-Left #article-Right {
   width: 40%;
   padding: 1em;
   margin: 0;
@@ -6,4 +6,12 @@
   border: 1px solid black;
   opacity: 0.8;
   filter: alpha(opacity=80);
+}
+.left_bias {
+  color: navy;
+  background-color: blue;
+}
+.Right_bias {
+  color: maroon;
+  background-color: red;
 }
