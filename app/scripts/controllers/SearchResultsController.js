@@ -9,7 +9,13 @@
 
     this.submitSearch = function() {
 
-      $http.jsonp('https://ajax.googleapis.com/ajax/services/search/news?version=1.0' + '&q=' + 'MSNBC%20' + 'barack%20obama' + '&callback=JSON_CALLBACK')
+      $http.jsonp('https://ajax.googleapis.com/ajax/services/search/news?callback=JSON_CALLBACK',{
+        params:{
+          "v":"1.0",
+          "q":"barack obama"
+        }
+      })
+
         .then(function(response) {
           self.searchResults = response.data.responseData.results;
           console.log(response);
