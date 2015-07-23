@@ -2,10 +2,10 @@
 <section class="jumbotron" id="searchbox">
   <h1 class="text-center" id="appName">Daily-Bias News</h1>
   <p>Critically expose, juxtapose, and rate political bias by topic — contrasting the coverage-slant of various journalistic sources across the political spectrum!</p>
-  <form class="navbar-form navbar-center" role="search" ng-controller="SearchController as search" ng-submit="searchQuery.submitSearch()">
+  <form class="navbar-form navbar-center" role="search" ng-submit="search.fireSearch()">
     <div class="form-group">
       <img src="/images/powered_by_google.png" width="100px" height="50px" alt="powered by Google news-search" border="0" />
-      <input type="text" id="searchbar" ng-model="searchQuery" ng-trim="true" ng-required="true" class="form-control input-large search-query" placeholder="input news-SEARCH keyword(s) here!">
+      <input type="text" id="searchbar" ng-model="search.newSearch" ng-trim="true" ng-required="true" class="form-control input-large search-query" placeholder="input news-SEARCH keyword(s) here!">
       <input type="image" type="submit" id="submitSearch" src="/images/daily-bias.png" alt="Submit Form" value="Submit" />
     </div>
   </form>

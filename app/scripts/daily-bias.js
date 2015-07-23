@@ -17,8 +17,8 @@
         .state('home', {
           url: '/home',
           templateUrl: '/views/home.html',
-          //controller: 'SearchController',
-          //controllerAs: 'submitQuery'
+          controller: 'SearchController',
+          controllerAs: 'search'
         }) //END Search
 
         .state('searchResults', {

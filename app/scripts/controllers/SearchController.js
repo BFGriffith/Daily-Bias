@@ -1,33 +1,84 @@
-(function() { //$http.jsonp to DOM — GoogleNews JSONP CORS workaround
-'use strict';
-angular.module('daily-bias' ['daily-bias'])
+(function() { // create searchQuery
+  'use strict';
+  angular.module('daily-bias')
+  .controller('SearchController', function(QueryFactory, $state) {
+  this.newSearch = '';
+  var self = this;
 
-
-.controller('SearchController', function($scope, $http, $state) {
-  $scope.widget = {
-    title: 'abc'
+  this.fireSearch = function(){
+    QueryFactory.setSearchQuery(self.newSearch);
+    console.log(QueryFactory.getSearchQuery());
+    $state.go('searchResults');
   };
 
-  $scope.set = function(new_title) {
-    this.widget.title = new_title;
-  }
+});
+})();
+/*
+      app.service('sharedProperties', function() {
+        var queryValue = 'test query value';
+        var objectValue = {
+          data: 'test object value'
+        };
+
+        return {
+          getString: function() {
+            return queryValue;
+          },
+          setString: function(value) {
+            queryValue = value;
+          },
+          getObject: function() {
+            return objectValue;
+          }
+        }
+      });
+
+      app.controller('SearchController', function($scope, $timeout, sharedProperties) {
+        $scope.queryValue = sharedProperties.getQuery();
+        $scope.objectValue = sharedProperties.getObject().data;
+      });
+
+      $state.go('contact-list');
+    }) // END SearchController
+})(); //END IIFE
+
+/*
+(function() { // create searchQuery
+  'use strict';
+  angular.module('daily-bias' ['daily-bias'])
+
+  .controller('SearchController', function(queries, $state) {
+      this.searchQuery = {};
+
+      this.saveQuery = function($form) {
+        // do nothing if nothing is submitted or if invalid
+        if (!$form.$dirty || !$form.$valid) return;
+
+        queries.create(this.query);
+
+        this.searchQuery = {}; // reset
+
+        $state.go('searchResults');
+      }; // END saveQuery
+
+    }) // END SearchController
+})(); //END IIFE
+*/
+
+/*
+    this.searchQuery = [];
+    var self = this;
+
+    this.submitQuery = function() {
+*/
 
 
-  /*
-      this.searchQuery = [];
-      var self = this;
-
-      this.submitQuery = function() {
-  */
 
 
-
-
-  $state.go('searchResults');
+//  $state.go('searchResults');
 //});
 //}; //END nesting function
-}); //END SearchController function
-})(); //END IIFE
+//}); //END SearchController function
 
 
 
