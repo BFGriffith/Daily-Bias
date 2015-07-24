@@ -30,12 +30,13 @@
     this.searchResults = [];
     var self = this;
 
-    this.submitSearch = function() {
+/*
+    this.differentSearch = function() {
 
       $http.jsonp('https://ajax.googleapis.com/ajax/services/search/news?callback=JSON_CALLBACK', {
         params: {
           "v": "1.0",
-          "q": searchQuery,
+          "q": differentSearch,
           "hl": "en",
           "rsz": "8",
           "topic": "p",
@@ -48,7 +49,10 @@
         console.log(response);
         //console.log(self.searchResults);
       });
+
     }; //END nesting function
+    */
+
   }); //END SearchController function
 })(); //END IIFE
 
