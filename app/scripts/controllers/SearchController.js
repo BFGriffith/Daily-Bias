@@ -7,7 +7,7 @@
 
   this.fireSearch = function(){
     QueryFactory.setSearchQuery(self.newSearch);
-    console.log(QueryFactory.getSearchQuery());
+    //console.log(QueryFactory.getSearchQuery());
     $state.go('searchResults');
   };
 
