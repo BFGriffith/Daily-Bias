@@ -13,6 +13,10 @@
     opacity: 0.9;
     filter:alpha(opacity=90);
   }
+  article span {
+    display: block;
+    width: 95%;
+  }
 }
 .Left_bias {
   color: lightgrey;
@@ -31,7 +35,6 @@
 .article div {
   display: inline-flex;
   width: 100%;
-  margin-right: 0;
   .section {
     display: inline;
   }
