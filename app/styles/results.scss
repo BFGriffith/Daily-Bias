@@ -16,11 +16,18 @@
 .Left_bias {
   color: lightgrey;
   background-color: blue;
+  position: inline;
+  vertical-align: middle;
 }
 .Right_bias {
   color: lightgray;
   background-color: red;
+  position: inline;
+  vertical-align: middle;
 }
 .article div {
-  display: inline;
+  display: inline-flex;
+  .section {
+    display: inline;
+  }
 }
