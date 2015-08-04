@@ -1,6 +1,7 @@
 #results {
   article {
     position: relative;
+    display: hidden;
   }
   article h4 {
     background-color: #fff;
@@ -18,15 +19,19 @@
   background-color: blue;
   position: inline;
   vertical-align: middle;
+  width: 100%;
 }
 .Right_bias {
   color: lightgray;
   background-color: red;
   position: inline;
   vertical-align: middle;
+  width: 100%;
 }
 .article div {
   display: inline-flex;
+  width: 100%;
+  margin-right: 0;
   .section {
     display: inline;
   }
