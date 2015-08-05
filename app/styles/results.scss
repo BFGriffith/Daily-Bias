@@ -15,7 +15,7 @@
   }
   article span {
     display: block;
-    width: 95%;
+    width: 100%;
   }
 }
 .Left_bias {
@@ -28,14 +28,19 @@
 .Right_bias {
   color: lightgray;
   background-color: red;
-  position: inline;
+  //position: inline;
   vertical-align: middle;
   width: 100%;
 }
 .article div {
   display: inline-flex;
-  width: 100%;
+  //width: 100%;
   .section {
     display: inline;
   }
+}
+ul {
+list-style-type: none;
+padding-left: 0;
+padding-right: 0;
 }

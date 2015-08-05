@@ -1,17 +1,16 @@
 (function() { // create searchQuery
   'use strict';
   angular.module('daily-bias')
-  .controller('SearchController', function(QueryFactory, $state) {
-  this.newSearch = '';
-  var self = this;
+    .controller('SearchController', function(QueryFactory, $state) {
+      this.newSearch = '';
+      var self = this;
 
-  this.fireSearch = function(){
-    QueryFactory.setSearchQuery(self.newSearch);
-    //console.log(QueryFactory.getSearchQuery());
-    $state.go('searchResults');
-  };
-
-});
+      this.fireSearch = function() {
+        QueryFactory.setSearchQuery(self.newSearch);
+        //console.log(QueryFactory.getSearchQuery());
+        $state.go('searchResults');
+      };
+    });
 })();
 /*
       app.service('sharedProperties', function() {

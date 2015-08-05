@@ -14,11 +14,10 @@
     <section ng-repeat="searchResult in search.searchResults" id="results" class="container-fluid col-xs-12 col-sm-6 col-md-4 col-lg-3">
       <article class="list-group well article" id="article">
         <div class="row form-group">
-          <div col-xs-1 col-sm-1 col-md-1 col-lg-1>
-            <input type="image" type="submit" id="liberal_bias" src="/images/Gabriele_Malaspina_noun_17485_donkey.png" width="30px" height="40px" alt="Submit Form" value="Submit" />
-            <br>
-            <span class="badge Left_bias">{{42}}</span>
-          </div>
+          <ul class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+            <li><input type="image" type="submit" id="liberal_bias" src="/images/Gabriele_Malaspina_noun_17485_donkey.png" width="30px" height="40px" alt="Submit Form" value="Submit" /></li>
+            <li class="badge Left_bias">{{42}}</li>
+          </ul>
           <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" id="title">
           <h5 class="list-group-item" id="articleTitle">
             <span>{{searchResult.titleNoFormatting}} —
@@ -27,11 +26,10 @@
           </h5>
           </div>
           <div class="row">
-          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-            <span class="badge Right_bias">{{42}}</span>
-            <br>
-            <input type="image" type="submit" id="conservative_bias" src="/images/Agustín_Amenábar_Larraín_noun_54090_elephantHead.png" width="30px" height="40px" alt="Submit Form" value="Submit" />
-          </div>
+          <ul class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+            <li><input type="image" type="submit" id="conservative_bias" src="/images/Agustín_Amenábar_Larraín_noun_54090_elephantHead.png" width="30px" height="40px" alt="Submit Form" value="Submit" /></li>
+            <li class="badge Right_bias">{{42}}</li>
+          </ul>
         </div>
         </div>
 
