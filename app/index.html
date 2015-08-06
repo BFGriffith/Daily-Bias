@@ -27,9 +27,15 @@
 
   <!-- NAVIGATION -->
   <ul class="navbar nav-justified col-lg-8" id="navigation">
-    <li class="btn btn-default" role="button" class="active"><a ui-sref="home"><h3>Home</h3></a></li>
-    <li class="btn btn-default" role="button"><a ui-sref="login" ng-click="login.login()"><h3>Login</h3></a></li>
-    <li class="btn btn-default" role="button"><a ui-sref="about"><h3>About this APP</h3></a></li>
+    <li class="btn btn-default" role="button" class="active">
+      <a ui-sref="home"><h3>Home</h3></a>
+    </li>
+    <li class="btn btn-default" role="button">
+      <a ui-sref="login" ng-click="login.login()"><h3>Login</h3></a>
+    </li>
+    <li class="btn btn-default" role="button">
+      <a ui-sref="about"><h3>About this APP</h3></a>
+    </li>
   </ul>
 
   <!-- MAIN CONTENT -->
@@ -37,14 +43,30 @@
 
   <!-- FOOTER -->
   <footer class="container-fluid" id="footerContainer">
-    <div id="footerContent">
-    <small><p>©2015 — Ben Griffith: front-end developer for hire<br>&#11019; CONTACT &#11018;</p></small>
-    <ul class="nav nav-pills nav-justified" role="tablist">
-      <li role="navigation"><a href="https://github.com/Epicurean306/Daily-Bias" target="_blank"><small>GitHub</small></a></li>
-      <li role="navigation"><a href="mailto:benjaminforbesgriffith@gmail.com"><small>eMail</small></a></li>
-    </ul>
+  <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseFooter" aria-expanded="false" aria-controls="collapseFooter">
+    <small>
+      <p>©2015 — Ben Griffith: front-end developer for hire
+        <br>&#11019; CONTACT &#11018;</p>
+    </small>
+  </button>
+  <div class="collapse" id="collapseFooter">
+    <div class="well" id="footerContent">
+
+      <ul class="nav nav-pills nav-justified" role="tablist">
+        <li role="navigation">
+          <a href="https://github.com/Epicurean306/Daily-Bias" target="_blank">
+            <small>GitHub</small>
+          </a>
+        </li>
+        <li role="navigation">
+          <a href="mailto:benjaminforbesgriffith@gmail.com">
+            <small>eMail</small>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-  </footer>
+</footer>
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
