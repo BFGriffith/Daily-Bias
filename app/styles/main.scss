@@ -37,6 +37,12 @@ body {//www.motionbackgroundsforfree.com/license-agreement (original image sourc
   position: fixed;
   text-align: center;
   width: 100%;
+  #footerButton {
+    border: none;
+    background-color: #ffffff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+  }
   #footerContent {
     border-radius: 4px;
     height: auto;
