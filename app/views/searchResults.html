@@ -20,12 +20,12 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" ng-controller="BiasController as bias">
           <ul class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-            <li>
-              <input type="image" type="submit" id="liberal_bias" src="/images/Gabriele_Malaspina_noun_17485_donkey.png" width="30px" height="40px" alt="Submit Form" value="Submit" />
+            <li class="increment left">
+              <input type="image" type="submit" id="liberal_bias" src="/images/Gabriele_Malaspina_noun_17485_donkey.png" width="30px" height="40px" alt="Submit Form" value="Submit" ng-click="bias.rateBias()" />
             </li>
-            <li class="badge Left_bias">{{42}}</li>
+            <li class="badge Left_bias biasRating">0</li>
           </ul>
           <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" id="title">
             <h5 class="list-group-item" id="articleTitle">
@@ -36,10 +36,10 @@
           </div>
           <div class="row">
             <ul class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-              <li>
-                <input type="image" type="submit" id="conservative_bias" src="/images/Agustín_Amenábar_Larraín_noun_54090_elephantHead.png" width="30px" height="40px" alt="Submit Form" value="Submit" />
+              <li class="increment right">
+                <input type="image" type="submit" id="conservative_bias" src="/images/Agustín_Amenábar_Larraín_noun_54090_elephantHead.png" width="30px" height="40px" alt="Submit Form" value="Submit" ng-click="bias.rateBias()" />
               </li>
-              <li class="badge Right_bias">{{42}}</li>
+              <li class="badge Right_bias biasRating">0</li>
             </ul>
           </div>
         </div>
