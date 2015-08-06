@@ -18,13 +18,15 @@
           url: '/home',
           templateUrl: '/views/home.html',
           controller: 'SearchController',
-          controllerAs: 'submitSearch'
+          controllerAs: 'search'
         }) //END Search
 
         .state('searchResults', {
           url: '/results',
-          templateUrl: '/views/searchResults.html'
-        }) //END Results
+          templateUrl: '/views/searchResults.html',
+          controller: 'SearchResultsController',
+          controllerAs: 'submitSearch'
+        }) //END SearchResultsController
 
         .state('login', {
           url: '/login',

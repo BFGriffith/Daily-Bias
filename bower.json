@@ -8,7 +8,8 @@
     "ui-router": "~0.2.15",
     "firebase": "~2.2.7",
     "angularfire": "~1.1.2",
-    "restangular": "~1.5.1"
+    "restangular": "~1.5.1",
+    "angular-sanitize": "~1.4.3"
   },
   "devDependencies": {
     "chai": "~3.0.0",

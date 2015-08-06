@@ -1,9 +1,67 @@
-#left #right {
-  width: 40%;
-  padding: 1em;
-  margin: 0;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+#searchBox {
+  width: 100%;
+}
+#results {
+  article {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    opacity: 0.9;
+    filter:alpha(opacity=90);
+  }
+  article h5 {
+    background-color: #fff;
+    opacity: 0.9;
+    filter:alpha(opacity=90);
+    border: none;
+    text-align: justify;
+    padding-right: 0;
+  }
+  article a {
+    background-color: #fff;
+    opacity: 0.9;
+    filter:alpha(opacity=90);
+    border: none;
+    text-align: left;
+  }
+  article span {
+    //display: block;
+    //width: 100%;
+  }
+}
+#bias_bar {
+  min-width: 2em;
+  padding-left: 2px;
+}
+.Left_bias {
+  color: lightgrey;
+  background-color: blue;
+  position: inline;
+  vertical-align: middle;
+  width: 2em;
+  min-width: 2ex;
+}
+.Right_bias {
+  color: lightgray;
+  background-color: red;
+  position: inline;
+  vertical-align: middle;
+  width: 2em;
+  min-width: 2ex;
+}
+.article div {
+  display: inline-flex;
+  //width: 100%;
+  .section {
+    display: inline;
+  }
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  padding-right: 0;
+  li {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
 }
