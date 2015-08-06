@@ -23,6 +23,7 @@ body {//www.motionbackgroundsforfree.com/license-agreement (original image sourc
     padding: 1em 1em 0 1em;
     margin-bottom: 150px;
 }
+
 #navigation {
   width: auto;
   li {
@@ -32,25 +33,28 @@ body {//www.motionbackgroundsforfree.com/license-agreement (original image sourc
   filter: alpha(opacity=80);
   }
 }
+
 #footerContainer {
+  padding-top: 1px;
   bottom: 0;
   position: fixed;
   text-align: center;
   width: 100%;
   #footerButton {
-    border: none;
+    border: #ffffff;
     background-color: #ffffff;
     opacity: 0.8;
     filter: alpha(opacity=80);
   }
   #footerContent {
+    width: auto;
     border-radius: 4px;
     height: auto;
     margin: auto;
-    padding: 1em;
-    width: 50%;
-    background-color: #ffffff;
-    border: 1px solid black;
+    padding: 1ex;
+    width: 20%;
+    background-color: none;
+    border: none;
     opacity: 0.8;
     filter: alpha(opacity=80);
     p {
