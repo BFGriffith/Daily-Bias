@@ -1,9 +1,12 @@
+#searchBox {
+  width: 100%;
+}
 #results {
   article {
     position: relative;
-    display: hidden;
+    //display: hidden;
   }
-  article h4 {
+  article h5 {
     background-color: #fff;
     opacity: 0.9;
     filter:alpha(opacity=90);
@@ -14,8 +17,8 @@
     filter:alpha(opacity=90);
   }
   article span {
-    display: block;
-    width: 100%;
+    //display: block;
+    //width: 100%;
   }
 }
 .Left_bias {
@@ -28,7 +31,7 @@
 .Right_bias {
   color: lightgray;
   background-color: red;
-  //position: inline;
+  position: inline;
   vertical-align: middle;
   width: 100%;
 }
@@ -40,7 +43,9 @@
   }
 }
 ul {
-list-style-type: none;
-padding-left: 0;
-padding-right: 0;
+  list-style-type: none;
+  li {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
 }
